@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /backend-domeneshop/
+Disallow: /project-memory/
+Sitemap: https://www.solarex.no/sitemap.xml
