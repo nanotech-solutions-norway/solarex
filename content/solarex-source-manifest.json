@@ -1,0 +1,21 @@
+{
+  "scan_id": "20260612_2200",
+  "generated": "22:00, 12.06.2026",
+  "sources": [
+    {"source_id":"SRC-001","title":"SolarEX v5.0 Automated Website Creation Playbook / Blueprint — 23:35, 12.06.2026","classification":"PUBLIC_APPROVED","status":"current controlling blueprint"},
+    {"source_id":"SRC-002","title":"SolarEX International SEO and Marketing Strategy Report 01:46, 24.05.2026","classification":"PUBLIC_APPROVED","status":"supporting SEO/market strategy"},
+    {"source_id":"SRC-003","title":"SolarEX SEO/AEO/GEO GitHub Governance and Deployment Plan — 23:40, 12.06.2026","classification":"PUBLIC_APPROVED","status":"governance implementation support"},
+    {"source_id":"SRC-004","title":"SolarEX SEO/AEO/GEO GitHub Pages Implementation Plan — 23:40, 12.06.2026","classification":"PUBLIC_APPROVED","status":"GitHub Pages implementation support"},
+    {"source_id":"SRC-005","title":"Google Drive source folder 1 scan","classification":"INTERNAL_ONLY","status":"scanned; contains SolarEX v5.0 folder, Quartz/Titan source files and older support files"},
+    {"source_id":"SRC-006","title":"Google Drive source folder 2 scan","classification":"INTERNAL_ONLY","status":"scanned; contains ROI, recreate, deployment, images and admin dashboard material"},
+    {"source_id":"SRC-007","title":"Primary GitHub repository","classification":"INTERNAL_ONLY","status":"accessible; fresh v5.0 build target"},
+    {"source_id":"SRC-008","title":"SolarEX ROI Calculator repository","classification":"PUBLIC_APPROVED","status":"accessible; static calculator source scanned"},
+    {"source_id":"SRC-009","title":"SolarEX animation source","classification":"PENDING_REVIEW","status":"declared source; environment validation failed; iframe/fallback integrated"}
+  ],
+  "new_changed_missing_conflicting": {
+    "new": ["Primary repository nanotech-solutions-norway/solarex selected as v5.0 target", "SolarEX v5.0 folder present in Drive folder 1", "SEO/AEO/GEO reports dated 23:40, 12.06.2026 are latest implementation support"],
+    "changed": [],
+    "missing": ["Live animation URL could not be validated from execution environment; fallback integrated"],
+    "conflicting": []
+  }
+}
