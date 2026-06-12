@@ -1,0 +1,63 @@
+name: Deploy SolarEX v5.0 test site
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: solarex-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare SolarEX site package
+        run: |
+          set -euo pipefail
+          PACKAGE="SolarEX_v5_website_build_package_20260612_2200.zip"
+          TEST_BASE="/solarex"
+          if [ ! -f "$PACKAGE" ]; then
+            echo "Missing package: $PACKAGE" >&2
+            exit 1
+          fi
+          rm -rf _site
+          mkdir -p _site
+          unzip -q "$PACKAGE" -d _site
+          rm -f _site/SolarEX_v5_website_build_package_20260612_2200.zip
+          touch _site/.nojekyll
+          # GitHub Pages project sites run below /solarex/. The package is production-root ready,
+          # so root-relative internal paths are rewritten for the public test URL.
+          find _site -name "*.html" -type f -print0 | xargs -0 sed -i \
+            -e 's|href="/|href="/solarex/|g' \
+            -e 's|src="/|src="/solarex/|g' \
+            -e 's|content="/|content="/solarex/|g'
+          find _site -name "*.xml" -type f -print0 | xargs -0 sed -i 's|https://www.solarex.no/|https://nanotech-solutions-norway.github.io/solarex/|g'
+          find _site -name "*.txt" -type f -print0 | xargs -0 sed -i 's|https://www.solarex.no/|https://nanotech-solutions-norway.github.io/solarex/|g'
+          echo "SolarEX v5.0 deploy package prepared."
+          find _site -maxdepth 2 -type f | sort | head -80
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
