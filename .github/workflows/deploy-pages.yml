@@ -25,7 +25,6 @@ jobs:
         run: |
           set -euo pipefail
           PACKAGE="SolarEX_v5_website_build_package_20260612_2200.zip"
-          TEST_BASE="/solarex"
           if [ ! -f "$PACKAGE" ]; then
             echo "Missing package: $PACKAGE" >&2
             exit 1
@@ -34,7 +33,19 @@ jobs:
           mkdir -p _site
           unzip -q "$PACKAGE" -d _site
           rm -f _site/SolarEX_v5_website_build_package_20260612_2200.zip
+
+          # Do not publish implementation-only or backend material to GitHub Pages.
+          rm -rf _site/backend-domeneshop
+          rm -rf _site/project-memory
+          rm -rf _site/.github
+          rm -rf _site/validation
+          rm -rf _site/docs
+          rm -rf _site/reports
+          rm -f _site/package.json
+          rm -f _site/.gitignore
+
           touch _site/.nojekyll
+
           # GitHub Pages project sites run below /solarex/. The package is production-root ready,
           # so root-relative internal paths are rewritten for the public test URL.
           find _site -name "*.html" -type f -print0 | xargs -0 sed -i \
@@ -43,7 +54,16 @@ jobs:
             -e 's|content="/|content="/solarex/|g'
           find _site -name "*.xml" -type f -print0 | xargs -0 sed -i 's|https://www.solarex.no/|https://nanotech-solutions-norway.github.io/solarex/|g'
           find _site -name "*.txt" -type f -print0 | xargs -0 sed -i 's|https://www.solarex.no/|https://nanotech-solutions-norway.github.io/solarex/|g'
-          echo "SolarEX v5.0 deploy package prepared."
+
+          # Basic release-blocker checks for the public artifact.
+          test -f _site/index.html
+          test -f _site/sitemap.xml
+          test -f _site/robots.txt
+          test -d _site/assets
+          test ! -d _site/backend-domeneshop
+          ! grep -RniE "password|api_key|secret|db_password|config.local.php" _site || exit 1
+
+          echo "SolarEX v5.0 public Pages artifact prepared."
           find _site -maxdepth 2 -type f | sort | head -80
 
       - name: Upload GitHub Pages artifact
