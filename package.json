@@ -1,0 +1,1 @@
+{"scripts":{"validate:routes":"node validation/route-check.js","validate:seo":"node validation/seo-check.js","validate:links":"node validation/link-check.js","validate":"npm run validate:routes && npm run validate:seo && npm run validate:links"},"devDependencies":{}}
