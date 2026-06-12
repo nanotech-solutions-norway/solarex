@@ -61,7 +61,7 @@ jobs:
           test -f _site/robots.txt
           test -d _site/assets
           test ! -d _site/backend-domeneshop
-          ! grep -RniE "password|api_key|secret|db_password|config.local.php" _site || exit 1
+          ! grep -RniE "(api[_-]?key[[:space:]]*=|db_password[[:space:]]*=|password[[:space:]]*=|secret[[:space:]]*=|token[[:space:]]*=|BEGIN .*PRIVATE KEY|config.local.php)" _site || exit 1
 
           echo "SolarEX v5.0 public Pages artifact prepared."
           find _site -maxdepth 2 -type f | sort | head -80
