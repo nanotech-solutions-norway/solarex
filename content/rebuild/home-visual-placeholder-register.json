@@ -1,0 +1,88 @@
+{
+  "generated": "13.06.2026 Europe/Oslo",
+  "route": "/",
+  "page": "SolarEX PV Glass Surface Engineering",
+  "status": "structure_and_placeholders_committed",
+  "visual_authority": [
+    "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/1_SolarEX-Surface-Engineering-for-PV-Glass.png",
+    "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/2_Why-Surface-Engineering-Matters.png",
+    "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering.pdf",
+    "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering.pptx"
+  ],
+  "placeholders": [
+    {
+      "id": "VIS-HOME-HERO-001",
+      "section": "Hero",
+      "required_visual": "Dark cinematic PV glass / solar-panel surface background from Home reference",
+      "source_status": "available",
+      "implementation_status": "placeholder_inserted",
+      "final_asset_status": "not_inserted_phase1",
+      "alt_text_draft": "Cinematic photovoltaic glass surface representing SolarEX surface engineering"
+    },
+    {
+      "id": "VIS-HOME-SURFACE-001",
+      "section": "Why Surface Engineering Matters",
+      "required_visual": "2x2 or four-card technical value grid with blue SolarEX highlights",
+      "source_status": "available_in_reference",
+      "implementation_status": "placeholder_inserted",
+      "final_asset_status": "not_inserted_phase1",
+      "alt_text_draft": "Technical value grid explaining SolarEX surface engineering benefits"
+    },
+    {
+      "id": "VIS-HOME-PATHWAYS-001",
+      "section": "Two Pathways",
+      "required_visual": "Split Quartz SiO₂ / Titan TiO₂ comparison visual",
+      "source_status": "available_in_reference",
+      "implementation_status": "placeholder_inserted",
+      "final_asset_status": "not_inserted_phase1",
+      "alt_text_draft": "Comparison of SolarEX Quartz SiO₂ and SolarEX Titan TiO₂ coating pathways"
+    },
+    {
+      "id": "VIS-HOME-PARAMETERS-001",
+      "section": "Validated Technical Parameters",
+      "required_visual": "Responsive technical parameter table or card group",
+      "source_status": "content_available",
+      "implementation_status": "placeholder_inserted",
+      "final_asset_status": "not_inserted_phase1",
+      "alt_text_draft": "Technical parameter comparison for Quartz SiO₂ and Titan TiO₂"
+    },
+    {
+      "id": "VIS-HOME-FIT-MATRIX-001",
+      "section": "Pathway Fit by Operating Environment",
+      "required_visual": "Operating environment fit matrix",
+      "source_status": "content_available",
+      "implementation_status": "placeholder_inserted",
+      "final_asset_status": "not_inserted_phase1",
+      "alt_text_draft": "Matrix showing when Quartz SiO₂ or Titan TiO₂ fits different PV operating conditions"
+    },
+    {
+      "id": "VIS-HOME-EVIDENCE-001",
+      "section": "Validated Evidence and Commercial Value",
+      "required_visual": "Study and ROI evidence cards with evidence labels",
+      "source_status": "content_available",
+      "implementation_status": "placeholder_inserted",
+      "final_asset_status": "not_inserted_phase1",
+      "alt_text_draft": "SolarEX evidence cards for Titan study, Quartz ROI model and field observations"
+    },
+    {
+      "id": "VIS-HOME-PROCESS-001",
+      "section": "From Site Assessment to Evidence Review",
+      "required_visual": "Four-stage workflow diagram",
+      "source_status": "available_in_reference",
+      "implementation_status": "placeholder_inserted",
+      "final_asset_status": "not_inserted_phase1",
+      "alt_text_draft": "Four-stage SolarEX workflow from site assessment to monitoring and review"
+    },
+    {
+      "id": "VIS-HOME-FAQ-001",
+      "section": "Technical Questions",
+      "required_visual": "FAQ accordion / question-card group",
+      "source_status": "content_available",
+      "implementation_status": "placeholder_inserted",
+      "final_asset_status": "not_inserted_phase1",
+      "alt_text_draft": "Technical FAQ section for SolarEX Quartz and Titan pathway decisions"
+    }
+  ],
+  "missing_or_bad_assets": [],
+  "phase_note": "Final images/visuals intentionally not inserted during Phase 1. The next visual phase must map approved assets to these placeholder IDs."
+}
