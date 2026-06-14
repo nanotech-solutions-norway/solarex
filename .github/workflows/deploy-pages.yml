@@ -1,8 +1,9 @@
-name: Deploy SolarEX v5.0 test site
+name: Deploy SolarEX rebuild preview
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - rebuild/solarex-v5-from-source-20260613
   workflow_dispatch:
 
 permissions:
@@ -21,49 +22,39 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Prepare SolarEX site package
+      - name: Prepare SolarEX rebuild preview artifact
         run: |
           set -euo pipefail
-          PACKAGE="SolarEX_v5_website_build_package_20260612_2200.zip"
-          if [ ! -f "$PACKAGE" ]; then
-            echo "Missing package: $PACKAGE" >&2
-            exit 1
-          fi
           rm -rf _site
           mkdir -p _site
-          unzip -q "$PACKAGE" -d _site
-          rm -f _site/SolarEX_v5_website_build_package_20260612_2200.zip
 
-          # Do not publish implementation-only or backend material to GitHub Pages.
-          rm -rf _site/backend-domeneshop
-          rm -rf _site/project-memory
-          rm -rf _site/.github
-          rm -rf _site/validation
-          rm -rf _site/docs
-          rm -rf _site/reports
-          rm -f _site/package.json
-          rm -f _site/.gitignore
+          # Copy the branch working tree as the preview source.
+          rsync -a ./ _site/ \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'docs' \
+            --exclude 'reports' \
+            --exclude 'project-memory' \
+            --exclude 'backend-domeneshop' \
+            --exclude 'validation' \
+            --exclude 'SolarEX_v5_website_build_package_20260612_2200.zip' \
+            --exclude 'package.json' \
+            --exclude '.gitignore'
 
           touch _site/.nojekyll
 
-          # GitHub Pages project sites run below /solarex/. The package is production-root ready,
-          # so root-relative internal paths are rewritten for the public test URL.
+          # GitHub Pages project sites run below /solarex/. Rewrite root-relative preview paths.
           find _site -name "*.html" -type f -print0 | xargs -0 sed -i \
             -e 's|href="/|href="/solarex/|g' \
             -e 's|src="/|src="/solarex/|g' \
             -e 's|content="/|content="/solarex/|g'
-          find _site -name "*.xml" -type f -print0 | xargs -0 sed -i 's|https://www.solarex.no/|https://nanotech-solutions-norway.github.io/solarex/|g'
-          find _site -name "*.txt" -type f -print0 | xargs -0 sed -i 's|https://www.solarex.no/|https://nanotech-solutions-norway.github.io/solarex/|g'
 
-          # Basic release-blocker checks for the public artifact.
           test -f _site/index.html
-          test -f _site/sitemap.xml
-          test -f _site/robots.txt
           test -d _site/assets
           test ! -d _site/backend-domeneshop
           ! grep -RniE "(api[_-]?key[[:space:]]*=|db_password[[:space:]]*=|password[[:space:]]*=|secret[[:space:]]*=|token[[:space:]]*=|BEGIN .*PRIVATE KEY|config.local.php)" _site || exit 1
 
-          echo "SolarEX v5.0 public Pages artifact prepared."
+          echo "SolarEX rebuild preview artifact prepared."
           find _site -maxdepth 2 -type f | sort | head -80
 
       - name: Upload GitHub Pages artifact
