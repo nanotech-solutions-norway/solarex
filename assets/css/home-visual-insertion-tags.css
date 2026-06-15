@@ -1,0 +1,38 @@
+.rx-manual-asset-tag {
+  display: block;
+  margin-top: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid rgba(215, 186, 106, 0.36);
+  border-radius: 14px;
+  background: rgba(215, 186, 106, 0.08);
+  color: #f0d98b;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.rx-manual-asset-tag strong,
+.rx-manual-asset-tag span {
+  display: block;
+}
+
+.rx-manual-asset-tag strong {
+  color: #fff2ad;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.rx-manual-asset-tag span {
+  color: #d9c779;
+}
+
+@media (max-width: 760px) {
+  .rx-manual-asset-tag {
+    margin-top: 0.45rem;
+    padding: 0.55rem 0.65rem;
+    font-size: 0.62rem;
+    border-radius: 10px;
+  }
+}
