@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   const currentScript = document.currentScript || document.querySelector('script[src*="navigation.js"]');
-  if (currentScript && !document.querySelector('link[data-solarex-mobile-fix]')) {
+
+  const loadCss = (href, dataKey) => {
+    if (!currentScript || document.querySelector(`link[${dataKey}]`)) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = new URL('../css/mobile-preview-fix.css', currentScript.src).href;
-    link.dataset.solarexMobileFix = 'true';
+    link.href = new URL(href, currentScript.src).href;
+    link.setAttribute(dataKey, 'true');
     document.head.appendChild(link);
-  }
+  };
+
+  loadCss('../css/mobile-preview-fix.css', 'data-solarex-mobile-fix');
+  loadCss('../css/mobile-structure-pass2.css', 'data-solarex-mobile-pass2');
 
   const button = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#primary-nav');
