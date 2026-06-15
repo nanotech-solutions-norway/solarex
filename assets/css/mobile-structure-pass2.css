@@ -1,0 +1,284 @@
+/* SolarEX Home mobile structure refinement pass 2. Loaded after mobile-preview-fix.css. */
+@media (max-width: 760px) {
+  body.rebuild-home {
+    background: #06101d;
+  }
+
+  .rebuild-home .rx-nav-shell {
+    min-height: 62px !important;
+  }
+
+  .rebuild-home .rx-brand-mark {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 0.82rem !important;
+  }
+
+  .rebuild-home .rx-brand strong {
+    font-size: 0.88rem !important;
+    letter-spacing: 0.035em !important;
+  }
+
+  .rebuild-home .rx-menu-toggle {
+    min-height: 34px !important;
+    padding: 0 0.68rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  .rebuild-home .rx-nav.primary-nav {
+    top: 62px !important;
+    max-height: calc(100dvh - 62px) !important;
+    padding: 0.75rem 1rem 1.4rem !important;
+  }
+
+  .rebuild-home .rx-nav > a,
+  .rebuild-home .rx-nav-group > a,
+  .rebuild-home .rx-nav-cta {
+    padding: 0.62rem 0.65rem !important;
+    font-size: 0.92rem !important;
+  }
+
+  .rebuild-home .rx-dropdown a {
+    padding: 0.48rem 0.65rem 0.48rem 1.25rem !important;
+    font-size: 0.83rem !important;
+  }
+
+  .rebuild-home .rx-shell {
+    width: min(100% - 24px, 1180px) !important;
+  }
+
+  .rebuild-home .rx-hero-grid {
+    padding: 2.45rem 0 2.65rem !important;
+    gap: 1rem !important;
+  }
+
+  .rebuild-home .rx-eyebrow,
+  .rebuild-home .rx-kicker {
+    font-size: 0.66rem !important;
+    letter-spacing: 0.13em !important;
+    margin-bottom: 0.55rem !important;
+  }
+
+  .rebuild-home h1 {
+    font-size: clamp(1.95rem, 9.4vw, 2.78rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.04em !important;
+    max-width: 12.8ch !important;
+    margin-bottom: 0.85rem !important;
+  }
+
+  .rebuild-home .rx-lead {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    max-width: 38ch !important;
+  }
+
+  .rebuild-home .rx-actions {
+    gap: 0.55rem !important;
+    margin-top: 1.05rem !important;
+  }
+
+  .rebuild-home .rx-btn {
+    min-height: 40px !important;
+    font-size: 0.82rem !important;
+    padding: 0 0.9rem !important;
+    border-radius: 12px !important;
+  }
+
+  .rebuild-home .rx-section,
+  .rebuild-home .rx-final-cta {
+    padding: 2.65rem 0 !important;
+  }
+
+  .rebuild-home .rx-section-head {
+    margin-bottom: 1.15rem !important;
+    text-align: left !important;
+  }
+
+  .rebuild-home h2 {
+    font-size: clamp(1.45rem, 6.9vw, 2.12rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.035em !important;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .rebuild-home h3 {
+    font-size: 1.02rem !important;
+    line-height: 1.16 !important;
+  }
+
+  .rebuild-home p,
+  .rebuild-home li,
+  .rebuild-home dd,
+  .rebuild-home dt,
+  .rebuild-home span {
+    font-size: 0.88rem;
+  }
+
+  .rebuild-home p {
+    line-height: 1.54 !important;
+  }
+
+  .rebuild-home .rx-card-grid,
+  .rebuild-home .rx-pathway-split,
+  .rebuild-home .rx-table-pair,
+  .rebuild-home .rx-evidence-grid,
+  .rebuild-home .rx-process,
+  .rebuild-home .rx-faq-grid,
+  .rebuild-home .rx-doc-list {
+    gap: 0.72rem !important;
+  }
+
+  .rebuild-home .rx-card,
+  .rebuild-home .rx-pathway,
+  .rebuild-home .rx-table-card,
+  .rebuild-home .rx-evidence-card,
+  .rebuild-home .rx-process article,
+  .rebuild-home .rx-faq-grid details {
+    padding: 0.88rem !important;
+    border-radius: 14px !important;
+  }
+
+  .rebuild-home .rx-pathway ul {
+    margin: 0.55rem 0 0.75rem !important;
+    padding-left: 1rem !important;
+    line-height: 1.46 !important;
+  }
+
+  .rebuild-home .rx-table-card dl {
+    gap: 0.35rem !important;
+  }
+
+  .rebuild-home .rx-table-card dl div {
+    padding: 0.46rem 0 !important;
+  }
+
+  .rebuild-home .rx-table-card dt {
+    font-size: 0.72rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .rebuild-home .rx-table-card dd {
+    font-size: 0.9rem !important;
+  }
+
+  .rebuild-home .rx-matrix {
+    gap: 0.58rem !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  .rebuild-home .rx-matrix-row {
+    padding: 0.85rem !important;
+    border: 1px solid var(--rx-line) !important;
+    border-radius: 14px !important;
+    background: var(--rx-card) !important;
+  }
+
+  .rebuild-home .rx-matrix-row span:first-child {
+    color: #f4f7fb;
+    font-weight: 700;
+  }
+
+  .rebuild-home .rx-matrix-row strong {
+    display: inline-flex;
+    width: max-content;
+    margin-right: 0.45rem;
+    padding: 0.18rem 0.46rem;
+    border-radius: 999px;
+    background: rgba(97,199,255,0.12);
+    border: 1px solid var(--rx-line);
+    font-size: 0.74rem;
+  }
+
+  .rebuild-home .rx-evidence-card span {
+    font-size: 0.62rem !important;
+    margin-bottom: 0.45rem !important;
+  }
+
+  .rebuild-home .rx-process article {
+    display: grid;
+    grid-template-columns: 2.1rem 1fr;
+    column-gap: 0.75rem;
+    align-items: start;
+  }
+
+  .rebuild-home .rx-process article span {
+    grid-row: span 2;
+    width: 2.05rem;
+    height: 2.05rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--rx-line-strong);
+    background: rgba(97,199,255,0.08);
+  }
+
+  .rebuild-home .rx-process article h3,
+  .rebuild-home .rx-process article p {
+    margin: 0 !important;
+  }
+
+  .rebuild-home .rx-faq-grid details:not([open]) {
+    padding-bottom: 0.78rem !important;
+  }
+
+  .rebuild-home .rx-faq-grid summary {
+    font-size: 0.94rem !important;
+  }
+
+  .rebuild-home .rx-doc-list a {
+    padding: 0.74rem 0.86rem !important;
+    border-radius: 12px !important;
+    font-size: 0.86rem !important;
+  }
+
+  .rebuild-home .rx-final-grid {
+    gap: 1rem !important;
+  }
+
+  .rebuild-home .rx-footer {
+    padding: 2.1rem 0 !important;
+  }
+
+  .rebuild-home .rx-footer-grid {
+    gap: 1.05rem !important;
+  }
+
+  .rebuild-home .rx-footer strong,
+  .rebuild-home .rx-footer span {
+    margin-bottom: 0.35rem !important;
+  }
+
+  .rebuild-home .rx-footer p,
+  .rebuild-home .rx-footer a {
+    font-size: 0.78rem !important;
+    margin: 0.28rem 0 !important;
+  }
+
+  .rebuild-home .visual-placeholder {
+    outline-offset: 2px !important;
+  }
+
+  .rebuild-home .visual-placeholder::after {
+    font-size: 0.55rem !important;
+    padding: 0.22rem 0.36rem !important;
+    margin: 0.26rem 0 0.45rem !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .rebuild-home h1 {
+    font-size: clamp(1.82rem, 8.9vw, 2.45rem) !important;
+  }
+
+  .rebuild-home .rx-lead {
+    font-size: 0.86rem !important;
+  }
+
+  .rebuild-home .rx-section,
+  .rebuild-home .rx-final-cta {
+    padding: 2.35rem 0 !important;
+  }
+}
