@@ -3,7 +3,7 @@ name: Deploy SolarEX rebuild preview
 on:
   push:
     branches:
-      - rebuild/solarex-v5-from-source-20260613
+      - main
   workflow_dispatch:
 
 permissions:
@@ -28,7 +28,7 @@ jobs:
           rm -rf _site
           mkdir -p _site
 
-          # Copy the branch working tree as the preview source.
+          # Copy the current main working tree as the preview source.
           rsync -a ./ _site/ \
             --exclude '.git' \
             --exclude '.github' \
@@ -54,7 +54,7 @@ jobs:
           test ! -d _site/backend-domeneshop
           ! grep -RniE "(api[_-]?key[[:space:]]*=|db_password[[:space:]]*=|password[[:space:]]*=|secret[[:space:]]*=|token[[:space:]]*=|BEGIN .*PRIVATE KEY|config.local.php)" _site || exit 1
 
-          echo "SolarEX rebuild preview artifact prepared."
+          echo "SolarEX main preview artifact prepared."
           find _site -maxdepth 2 -type f | sort | head -80
 
       - name: Upload GitHub Pages artifact
