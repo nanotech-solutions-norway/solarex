@@ -10,8 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(link);
   };
 
+  const loadScript = (href, dataKey) => {
+    if (!currentScript || document.querySelector(`script[${dataKey}]`)) return;
+    const script = document.createElement('script');
+    script.src = new URL(href, currentScript.src).href;
+    script.defer = true;
+    script.setAttribute(dataKey, 'true');
+    document.body.appendChild(script);
+  };
+
   loadCss('../css/mobile-preview-fix.css', 'data-solarex-mobile-fix');
   loadCss('../css/mobile-structure-pass2.css', 'data-solarex-mobile-pass2');
+  loadCss('../css/home-visual-insertion-tags.css', 'data-solarex-home-visual-tags-css');
+  loadScript('home-visual-insertion-tags.js', 'data-solarex-home-visual-tags-js');
 
   const button = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#primary-nav');
