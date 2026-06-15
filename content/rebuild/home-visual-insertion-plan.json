@@ -1,0 +1,79 @@
+{
+  "generated": "2026-06-15 Europe/Oslo",
+  "route": "/",
+  "status": "VISUAL_INSERTION_PLANNED_WITH_MANUAL_ASSET_TAGS",
+  "binary_asset_connector_status": "PENDING_MANUAL_UPLOAD",
+  "note": "The current GitHub connector supports text-file edits. Binary PNG/PPTX/PDF visual insertion was therefore not performed. Existing placeholders are retained and mapped to manual insertion tags.",
+  "source_authority": [
+    "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/1_SolarEX-Surface-Engineering-for-PV-Glass.png",
+    "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/2_Why-Surface-Engineering-Matters.png",
+    "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering.pdf",
+    "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering.pptx"
+  ],
+  "placeholders": [
+    {
+      "placeholder_id": "VIS-HOME-HERO-001",
+      "manual_asset_tag": "MANUAL-ASSET-HOME-HERO-001",
+      "source_file": "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/1_SolarEX-Surface-Engineering-for-PV-Glass.png",
+      "target_path": "assets/img/home/solar-ex-home-hero-pv-glass.png",
+      "public_use": "Hero background with dark overlay and PV glass water-droplet visual.",
+      "status": "PENDING_BINARY_UPLOAD"
+    },
+    {
+      "placeholder_id": "VIS-HOME-SURFACE-001",
+      "manual_asset_tag": "MANUAL-ASSET-HOME-SURFACE-001",
+      "source_file": "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/2_Why-Surface-Engineering-Matters.png",
+      "target_path": "assets/img/home/home-surface-engineering-matters.png",
+      "public_use": "Reference crop/layout for Why Surface Engineering Matters section.",
+      "status": "PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"
+    },
+    {
+      "placeholder_id": "VIS-HOME-PATHWAYS-001",
+      "manual_asset_tag": "MANUAL-ASSET-HOME-PATHWAYS-001",
+      "source_file": "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/2_Why-Surface-Engineering-Matters.png",
+      "target_path": "assets/img/home/home-two-pathways-quartz-titan.png",
+      "public_use": "Reference crop/layout for Quartz SiO2 and Titan TiO2 split.",
+      "status": "PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"
+    },
+    {
+      "placeholder_id": "VIS-HOME-PARAMETERS-001",
+      "manual_asset_tag": "MANUAL-ASSET-HOME-PARAMETERS-001",
+      "source_file": "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/2_Why-Surface-Engineering-Matters.png",
+      "target_path": "assets/img/home/home-validated-technical-parameters.png",
+      "public_use": "Reference crop/layout for validated technical parameter blocks.",
+      "status": "PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"
+    },
+    {
+      "placeholder_id": "VIS-HOME-FIT-MATRIX-001",
+      "manual_asset_tag": "MANUAL-ASSET-HOME-FIT-MATRIX-001",
+      "source_file": "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/2_Why-Surface-Engineering-Matters.png",
+      "target_path": "assets/img/home/home-pathway-fit-matrix.png",
+      "public_use": "Reference crop/layout for pathway fit matrix.",
+      "status": "PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"
+    },
+    {
+      "placeholder_id": "VIS-HOME-EVIDENCE-001",
+      "manual_asset_tag": "MANUAL-ASSET-HOME-EVIDENCE-001",
+      "source_file": "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering/2_Why-Surface-Engineering-Matters.png",
+      "target_path": "assets/img/home/home-evidence-commercial-value.png",
+      "public_use": "Reference crop/layout for evidence classification and commercial value section.",
+      "status": "PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"
+    },
+    {
+      "placeholder_id": "VIS-HOME-PROCESS-001",
+      "manual_asset_tag": "MANUAL-ASSET-HOME-PROCESS-001",
+      "source_file": "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering.pptx",
+      "target_path": "assets/img/home/home-site-assessment-workflow.png",
+      "public_use": "Reference for compact site assessment to evidence review workflow.",
+      "status": "PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"
+    },
+    {
+      "placeholder_id": "VIS-HOME-FAQ-001",
+      "manual_asset_tag": "MANUAL-ASSET-HOME-FAQ-001",
+      "source_file": "SolarEX-pres/SolarEX-PV-Glass-Coatings-or-SiO-and-TiO-Surface-Engineering.pptx",
+      "target_path": "assets/img/home/home-technical-questions.png",
+      "public_use": "Reference for technical questions and answer blocks.",
+      "status": "PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"
+    }
+  ]
+}
