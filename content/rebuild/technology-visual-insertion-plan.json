@@ -1,0 +1,27 @@
+{
+  "generated": "2026-06-16 Europe/Oslo",
+  "route": "/technology/",
+  "status": "VISUAL_INSERTION_PLANNED_WITH_MANUAL_ASSET_TAGS",
+  "binary_asset_connector_status": "PENDING_MANUAL_UPLOAD",
+  "note": "Final binary visual assets are not inserted through the current text-file connector. Existing placeholders are retained and mapped to manual insertion tags.",
+  "source_authority": [
+    "SolarEX-pres/SolarEX-Technology-or-SolarEX-Quartz-and-Titan/1_Surface-Science-for-Solar-Assets.png",
+    "SolarEX-pres/SolarEX-Technology-or-SolarEX-Quartz-and-Titan/2_Surface-Engineering-Is-a-Technical-Decision.png",
+    "SolarEX-pres/SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx",
+    "SolarEX-pres/SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-TECH-HERO-001","manual_asset_tag":"MANUAL-ASSET-TECH-HERO-001","source_file":"1_Surface-Science-for-Solar-Assets.png","target_path":"assets/img/technology/technology-hero-surface-science.webp","public_use":"Hero background with dark overlay; no text obstruction.","status":"PENDING_BINARY_UPLOAD"},
+    {"placeholder_id":"VIS-TECH-PRINCIPLE-001","manual_asset_tag":"MANUAL-ASSET-TECH-PRINCIPLE-001","source_file":"2_Surface-Engineering-Is-a-Technical-Decision.png","target_path":"assets/img/technology/technology-engineering-principle.webp","public_use":"Engineering-principle visual/card composition.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-PATHWAYS-001","manual_asset_tag":"MANUAL-ASSET-TECH-PATHWAYS-001","source_file":"2_Surface-Engineering-Is-a-Technical-Decision.png","target_path":"assets/img/technology/technology-two-pathways.webp","public_use":"Quartz SiO2 and Titan TiO2 split pathway visual.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-COMPARISON-001","manual_asset_tag":"MANUAL-ASSET-TECH-COMPARISON-001","source_file":"2_Surface-Engineering-Is-a-Technical-Decision.png","target_path":"assets/img/technology/technology-mechanism-comparison.webp","public_use":"Mechanism comparison table or diagram.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-SURFACE-SCIENCE-001","manual_asset_tag":"MANUAL-ASSET-TECH-SURFACE-SCIENCE-001","source_file":"SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx","target_path":"assets/img/technology/technology-surface-science.webp","public_use":"Surface energy, nano-scale film and adhesion behavior visual.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-DEEP-DIVE-001","manual_asset_tag":"MANUAL-ASSET-TECH-DEEP-DIVE-001","source_file":"SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx","target_path":"assets/img/technology/technology-product-deep-dive.webp","public_use":"Passive Quartz versus active Titan architecture comparison.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-UV-DECISION-001","manual_asset_tag":"MANUAL-ASSET-TECH-UV-DECISION-001","source_file":"SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx","target_path":"assets/img/technology/technology-uv-decision.webp","public_use":"UV availability as decision divider.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-APPLICATION-001","manual_asset_tag":"MANUAL-ASSET-TECH-APPLICATION-001","source_file":"SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx","target_path":"assets/img/technology/technology-application-engineering.webp","public_use":"Prepare, apply, cure and verify workflow.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-EVIDENCE-001","manual_asset_tag":"MANUAL-ASSET-TECH-EVIDENCE-001","source_file":"SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx","target_path":"assets/img/technology/technology-evidence-framework.webp","public_use":"Evidence categories and test-condition control.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-VALIDATION-001","manual_asset_tag":"MANUAL-ASSET-TECH-VALIDATION-001","source_file":"SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx","target_path":"assets/img/technology/technology-validation-methodology.webp","public_use":"UV, MB degradation, SEM and photon-efficiency validation context.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-DECISION-TABLE-001","manual_asset_tag":"MANUAL-ASSET-TECH-DECISION-TABLE-001","source_file":"SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx","target_path":"assets/img/technology/technology-decision-table.webp","public_use":"Environment-based Quartz/Titan selection table.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TECH-FAQ-001","manual_asset_tag":"MANUAL-ASSET-TECH-FAQ-001","source_file":"SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx","target_path":"assets/img/technology/technology-faq.webp","public_use":"Technical question cards and AEO answers.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"}
+  ]
+}
