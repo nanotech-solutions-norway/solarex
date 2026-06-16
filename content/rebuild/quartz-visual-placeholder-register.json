@@ -1,0 +1,23 @@
+{
+  "generated": "2026-06-16 Europe/Oslo",
+  "route": "/quartz/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "SolarEX-pres/SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection/1_SolarEX-Quartz-Passive-SiO-Surface-Engineering-for-Solar-Glass.png",
+    "SolarEX-pres/SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection/2_The-Passive-Pathway-for-Soiling-Control.png",
+    "SolarEX-pres/SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pptx",
+    "SolarEX-pres/SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-QUARTZ-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-QUARTZ-HERO-001","target_path":"assets/img/quartz/quartz-hero-passive-sio2.webp"},
+    {"placeholder_id":"VIS-QUARTZ-PATHWAY-001","section":"Passive pathway","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-PATHWAY-001","target_path":"assets/img/quartz/quartz-passive-pathway.webp"},
+    {"placeholder_id":"VIS-QUARTZ-MECHANISM-001","section":"How Quartz works","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-MECHANISM-001","target_path":"assets/img/quartz/quartz-mechanism.webp"},
+    {"placeholder_id":"VIS-QUARTZ-TECHNICAL-PROFILE-001","section":"Technical profile","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-TECHNICAL-PROFILE-001","target_path":"assets/img/quartz/quartz-technical-profile.webp"},
+    {"placeholder_id":"VIS-QUARTZ-FIT-001","section":"Where Quartz performs best","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-FIT-001","target_path":"assets/img/quartz/quartz-fit.webp"},
+    {"placeholder_id":"VIS-QUARTZ-EVIDENCE-001","section":"Contextualized evidence","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-EVIDENCE-001","target_path":"assets/img/quartz/quartz-evidence.webp"},
+    {"placeholder_id":"VIS-QUARTZ-ROI-001","section":"Europe ROI model","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-ROI-001","target_path":"assets/img/quartz/quartz-roi-model.webp"},
+    {"placeholder_id":"VIS-QUARTZ-APPLICATION-001","section":"Application and preparation","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-APPLICATION-001","target_path":"assets/img/quartz/quartz-application.webp"},
+    {"placeholder_id":"VIS-QUARTZ-SELECTION-001","section":"Pathway selection","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-SELECTION-001","target_path":"assets/img/quartz/quartz-selection.webp"},
+    {"placeholder_id":"VIS-QUARTZ-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-QUARTZ-FAQ-001","target_path":"assets/img/quartz/quartz-faq.webp"}
+  ]
+}
