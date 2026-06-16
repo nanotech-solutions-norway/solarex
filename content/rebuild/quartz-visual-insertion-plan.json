@@ -1,0 +1,27 @@
+{
+  "generated": "2026-06-16 Europe/Oslo",
+  "route": "/quartz/",
+  "status": "VISUAL_INSERTION_PLANNED_WITH_MANUAL_ASSET_TAGS",
+  "binary_asset_connector_status": "PENDING_MANUAL_UPLOAD",
+  "note": "Final binary visual assets are not inserted through the current text-file connector. Existing placeholders are retained and mapped to manual insertion tags.",
+  "source_authority": [
+    "SolarEX-pres/SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection/1_SolarEX-Quartz-Passive-SiO-Surface-Engineering-for-Solar-Glass.png",
+    "SolarEX-pres/SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection/2_The-Passive-Pathway-for-Soiling-Control.png",
+    "SolarEX-pres/SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pptx",
+    "SolarEX-pres/SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pdf",
+    "SolarEX Quartz Edition - Application Instructions v2.7",
+    "SolarEX - Quartz - InterCos PV plant"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-QUARTZ-HERO-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-HERO-001","source_file":"1_SolarEX-Quartz-Passive-SiO-Surface-Engineering-for-Solar-Glass.png","target_path":"assets/img/quartz/quartz-hero-passive-sio2.webp","public_use":"Hero background with dark overlay; no text obstruction.","status":"PENDING_BINARY_UPLOAD"},
+    {"placeholder_id":"VIS-QUARTZ-PATHWAY-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-PATHWAY-001","source_file":"2_The-Passive-Pathway-for-Soiling-Control.png","target_path":"assets/img/quartz/quartz-passive-pathway.webp","public_use":"Passive pathway cards for no UV, hydrophobic/oleophobic behavior and cleaning burden.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-QUARTZ-MECHANISM-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-MECHANISM-001","source_file":"SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pptx","target_path":"assets/img/quartz/quartz-mechanism.webp","public_use":"SiO2 surface energy and easy-clean mechanism visual.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-QUARTZ-TECHNICAL-PROFILE-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-TECHNICAL-PROFILE-001","source_file":"SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pptx","target_path":"assets/img/quartz/quartz-technical-profile.webp","public_use":"Quartz technical profile table/cards.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-QUARTZ-FIT-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-FIT-001","source_file":"SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pptx","target_path":"assets/img/quartz/quartz-fit.webp","public_use":"Quartz best-fit application cards.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-QUARTZ-EVIDENCE-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-EVIDENCE-001","source_file":"Quartz deck plus Quartz InterCos source material","target_path":"assets/img/quartz/quartz-evidence.webp","public_use":"Europe ROI, Scandinavian test and Middle East cleanliness evidence cards.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-QUARTZ-ROI-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-ROI-001","source_file":"SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pptx","target_path":"assets/img/quartz/quartz-roi-model.webp","public_use":"Structured Europe ROI scenario metrics.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-QUARTZ-APPLICATION-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-APPLICATION-001","source_file":"SolarEX Quartz Edition - Application Instructions v2.7 plus Quartz reference deck","target_path":"assets/img/quartz/quartz-application.webp","public_use":"Clean, apply, cure and verify workflow.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-QUARTZ-SELECTION-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-SELECTION-001","source_file":"SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pptx","target_path":"assets/img/quartz/quartz-selection.webp","public_use":"Quartz versus Titan decision split.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-QUARTZ-FAQ-001","manual_asset_tag":"MANUAL-ASSET-QUARTZ-FAQ-001","source_file":"SolarEX-Quartz-SiO-Coating-or-Passive-PV-Glass-Protection.pptx","target_path":"assets/img/quartz/quartz-faq.webp","public_use":"Quartz technical question cards and AEO answers.","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"}
+  ]
+}
