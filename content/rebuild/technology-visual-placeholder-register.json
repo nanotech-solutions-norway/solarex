@@ -1,0 +1,25 @@
+{
+  "generated": "2026-06-16 Europe/Oslo",
+  "route": "/technology/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "SolarEX-pres/SolarEX-Technology-or-SolarEX-Quartz-and-Titan/1_Surface-Science-for-Solar-Assets.png",
+    "SolarEX-pres/SolarEX-Technology-or-SolarEX-Quartz-and-Titan/2_Surface-Engineering-Is-a-Technical-Decision.png",
+    "SolarEX-pres/SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pptx",
+    "SolarEX-pres/SolarEX-Technology-or-SolarEX-Quartz-and-Titan.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-TECH-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-TECH-HERO-001","target_path":"assets/img/technology/technology-hero-surface-science.webp"},
+    {"placeholder_id":"VIS-TECH-PRINCIPLE-001","section":"Engineering principle","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-PRINCIPLE-001","target_path":"assets/img/technology/technology-engineering-principle.webp"},
+    {"placeholder_id":"VIS-TECH-PATHWAYS-001","section":"Platform overview","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-PATHWAYS-001","target_path":"assets/img/technology/technology-two-pathways.webp"},
+    {"placeholder_id":"VIS-TECH-COMPARISON-001","section":"Mechanism comparison","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-COMPARISON-001","target_path":"assets/img/technology/technology-mechanism-comparison.webp"},
+    {"placeholder_id":"VIS-TECH-SURFACE-SCIENCE-001","section":"Surface science","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-SURFACE-SCIENCE-001","target_path":"assets/img/technology/technology-surface-science.webp"},
+    {"placeholder_id":"VIS-TECH-DEEP-DIVE-001","section":"Product deep dive","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-DEEP-DIVE-001","target_path":"assets/img/technology/technology-product-deep-dive.webp"},
+    {"placeholder_id":"VIS-TECH-UV-DECISION-001","section":"UV dependency","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-UV-DECISION-001","target_path":"assets/img/technology/technology-uv-decision.webp"},
+    {"placeholder_id":"VIS-TECH-APPLICATION-001","section":"Application engineering","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-APPLICATION-001","target_path":"assets/img/technology/technology-application-engineering.webp"},
+    {"placeholder_id":"VIS-TECH-EVIDENCE-001","section":"Evidence framework","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-EVIDENCE-001","target_path":"assets/img/technology/technology-evidence-framework.webp"},
+    {"placeholder_id":"VIS-TECH-VALIDATION-001","section":"Validation methodology","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-VALIDATION-001","target_path":"assets/img/technology/technology-validation-methodology.webp"},
+    {"placeholder_id":"VIS-TECH-DECISION-TABLE-001","section":"Decision reference","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-DECISION-TABLE-001","target_path":"assets/img/technology/technology-decision-table.webp"},
+    {"placeholder_id":"VIS-TECH-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TECH-FAQ-001","target_path":"assets/img/technology/technology-faq.webp"}
+  ]
+}
