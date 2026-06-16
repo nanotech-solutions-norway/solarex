@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadCss('../css/mobile-structure-pass2.css', 'data-solarex-mobile-pass2');
   loadCss('../css/home-visual-insertion-tags.css', 'data-solarex-home-visual-tags-css');
   loadScript('home-visual-insertion-tags.js', 'data-solarex-home-visual-tags-js');
+  loadScript('technology-visual-insertion-tags.js', 'data-solarex-tech-visual-tags-js');
 
   const button = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#primary-nav');
