@@ -1,0 +1,24 @@
+{
+  "generated": "2026-06-17 Europe/Oslo",
+  "route": "/proof-results/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review folder",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pptx",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pdf",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies",
+    "SolarEX - Quartz - InterCos PV plant material",
+    "SolarEX - Titan - PV3 Experts - Solar Module Study.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-PROOF-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-PROOF-HERO-001","target_path":"assets/img/proof-results/proof-hero-evidence.webp"},
+    {"placeholder_id":"VIS-PROOF-PRINCIPLE-001","section":"Evidence principle","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROOF-PRINCIPLE-001","target_path":"assets/img/proof-results/proof-principle.webp"},
+    {"placeholder_id":"VIS-PROOF-EVIDENCE-MAP-001","section":"Evidence map","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROOF-EVIDENCE-MAP-001","target_path":"assets/img/proof-results/proof-evidence-map.webp"},
+    {"placeholder_id":"VIS-PROOF-RESULTS-TABLE-001","section":"Results summary","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROOF-RESULTS-TABLE-001","target_path":"assets/img/proof-results/proof-results-table.webp"},
+    {"placeholder_id":"VIS-PROOF-QUARTZ-001","section":"Quartz evidence","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROOF-QUARTZ-001","target_path":"assets/img/proof-results/proof-quartz-evidence.webp"},
+    {"placeholder_id":"VIS-PROOF-TITAN-001","section":"Titan evidence","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROOF-TITAN-001","target_path":"assets/img/proof-results/proof-titan-evidence.webp"},
+    {"placeholder_id":"VIS-PROOF-VALIDATION-METHOD-001","section":"Validation method","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROOF-VALIDATION-METHOD-001","target_path":"assets/img/proof-results/proof-validation-method.webp"},
+    {"placeholder_id":"VIS-PROOF-CLAIM-BOUNDARY-001","section":"Claim boundary","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROOF-CLAIM-BOUNDARY-001","target_path":"assets/img/proof-results/proof-claim-boundary.webp"},
+    {"placeholder_id":"VIS-PROOF-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROOF-FAQ-001","target_path":"assets/img/proof-results/proof-faq.webp"}
+  ]
+}
