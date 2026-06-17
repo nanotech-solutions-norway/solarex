@@ -1,0 +1,27 @@
+{
+  "generated": "2026-06-17 Europe/Oslo",
+  "route": "/projects/",
+  "status": "VISUAL_INSERTION_PLANNED_WITH_MANUAL_ASSET_TAGS",
+  "binary_asset_connector_status": "PENDING_MANUAL_UPLOAD",
+  "note": "Final binary visual assets are not inserted through the current text-file connector. Existing placeholders are retained and mapped to manual insertion tags.",
+  "source_authority": [
+    "Future_Website_Creation_Playbook_Blueprint_1507_13062026.docx",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review folder",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pptx",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pdf",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies folder",
+    "SolarEX - Quartz - InterCos PV plant material",
+    "SolarEX - Titan - PV3 Experts - Solar Module Study.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-PROJECTS-HERO-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-HERO-001","target_path":"assets/img/projects/projects-hero-pilot-review.webp","status":"PENDING_BINARY_UPLOAD"},
+    {"placeholder_id":"VIS-PROJECTS-PRINCIPLE-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-PRINCIPLE-001","target_path":"assets/img/projects/projects-principle.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-PROJECTS-ROUTES-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-ROUTES-001","target_path":"assets/img/projects/projects-routes.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-PROJECTS-WORKFLOW-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-WORKFLOW-001","target_path":"assets/img/projects/projects-workflow.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-PROJECTS-PATHWAY-TABLE-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-PATHWAY-TABLE-001","target_path":"assets/img/projects/projects-pathway-table.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-PROJECTS-PILOT-DESIGN-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-PILOT-DESIGN-001","target_path":"assets/img/projects/projects-pilot-design.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-PROJECTS-EVIDENCE-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-EVIDENCE-001","target_path":"assets/img/projects/projects-evidence.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-PROJECTS-DELIVERABLES-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-DELIVERABLES-001","target_path":"assets/img/projects/projects-deliverables.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-PROJECTS-FAQ-001","manual_asset_tag":"MANUAL-ASSET-PROJECTS-FAQ-001","target_path":"assets/img/projects/projects-faq.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"}
+  ]
+}
