@@ -1,0 +1,26 @@
+{
+  "generated": "2026-06-17 Europe/Oslo",
+  "route": "/documentation/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE_DOWNLOADS_DEFERRED",
+  "source_authority": [
+    "Future_Website_Creation_Playbook_Blueprint_1507_13062026.docx",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies folder",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies.pptx",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies.pdf",
+    "SolarEX Quartz Edition - Application Instructions v2.7",
+    "SolarEX Titan Edition - Application Instructions v 2.8",
+    "SolarEX - Quartz - InterCos PV plant material",
+    "SolarEX - Titan - PV3 Experts - Solar Module Study.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-DOC-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-DOC-HERO-001","target_path":"assets/img/documentation/documentation-hero-technical-files.webp"},
+    {"placeholder_id":"VIS-DOC-PRINCIPLE-001","section":"Documentation principle","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-DOC-PRINCIPLE-001","target_path":"assets/img/documentation/documentation-principle.webp"},
+    {"placeholder_id":"VIS-DOC-LIBRARY-001","section":"Document library","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-DOC-LIBRARY-001","target_path":"assets/img/documentation/documentation-library.webp"},
+    {"placeholder_id":"VIS-DOC-MATRIX-001","section":"Document matrix","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-DOC-MATRIX-001","target_path":"assets/img/documentation/documentation-matrix.webp"},
+    {"placeholder_id":"VIS-DOC-DOWNLOAD-CONTROL-001","section":"Download control","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-DOC-DOWNLOAD-CONTROL-001","target_path":"assets/img/documentation/documentation-download-control.webp"},
+    {"placeholder_id":"VIS-DOC-REVIEW-FLOW-001","section":"Technical review flow","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-DOC-REVIEW-FLOW-001","target_path":"assets/img/documentation/documentation-review-flow.webp"},
+    {"placeholder_id":"VIS-DOC-BACKEND-001","section":"Backend readiness","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-DOC-BACKEND-001","target_path":"assets/img/documentation/documentation-backend-readiness.webp"},
+    {"placeholder_id":"VIS-DOC-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-DOC-FAQ-001","target_path":"assets/img/documentation/documentation-faq.webp"}
+  ],
+  "download_activation_status": "DEFERRED_UNTIL_APPROVED_FILE_PATHS_AND_BACKEND_TRACKING_ARE_CONFIRMED"
+}
