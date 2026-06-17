@@ -1,0 +1,192 @@
+/* SolarEX Titan page phase 1 - structure, content and visual placeholders only. */
+body.titan-page {
+  margin: 0;
+  color: var(--rx-text, #f4f7fb);
+  background: radial-gradient(circle at 72% 10%, rgba(148,130,255,0.17), transparent 25rem), #06101d;
+  font-family: Georgia, 'Libre Baskerville', serif;
+}
+
+.titan-page .titan-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 690px;
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--rx-line);
+}
+
+.titan-page .titan-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(2,8,16,0.96), rgba(10,18,42,0.88) 52%, rgba(10,18,42,0.36));
+}
+
+.titan-page .titan-hero-visual {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(180,163,255,0.22), transparent 22rem), repeating-linear-gradient(115deg, rgba(148,130,255,0.07) 0 2px, transparent 2px 38px), #071424;
+}
+
+.titan-page .titan-hero-visual > * { display: none !important; }
+
+.titan-page .titan-hero-visual::after {
+  content: attr(data-placeholder-id);
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid rgba(215,186,106,0.38);
+  border-radius: 999px;
+  background: rgba(6,16,29,0.72);
+  color: rgba(240,217,139,0.88);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.titan-page .titan-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: end;
+  padding: 7rem 0 5.5rem;
+}
+
+.titan-page .titan-hero-panel,
+.titan-page .titan-card,
+.titan-page .titan-evidence-card,
+.titan-page .titan-process article,
+.titan-page .titan-faq-card,
+.titan-page .titan-profile,
+.titan-page .titan-fit-card {
+  background: var(--rx-card, rgba(13, 29, 49, 0.88));
+  border: 1px solid var(--rx-line, rgba(124, 200, 255, 0.18));
+  border-radius: var(--rx-radius, 22px);
+  padding: 1.2rem;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.16);
+}
+
+.titan-page .titan-hero-panel { display: grid; gap: 0.85rem; }
+.titan-page .titan-hero-panel div { padding-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.titan-page .titan-hero-panel div:last-child { border-bottom: 0; padding-bottom: 0; }
+
+.titan-page .titan-badge,
+.titan-page .titan-number,
+.titan-page .titan-hero-panel span {
+  color: #b4a3ff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+.titan-page .titan-card-grid,
+.titan-page .titan-fit-grid,
+.titan-page .titan-evidence-grid,
+.titan-page .titan-study-grid,
+.titan-page .titan-faq-grid,
+.titan-page .titan-doc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.titan-page .titan-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+}
+
+.titan-page .titan-profile-table {
+  display: grid;
+  border: 1px solid var(--rx-line);
+  border-radius: var(--rx-radius, 22px);
+  overflow: hidden;
+  background: var(--rx-card);
+}
+
+.titan-page .titan-profile-row {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 1rem;
+  padding: 0.92rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.titan-page .titan-profile-row:last-child { border-bottom: 0; }
+.titan-page .titan-profile-row strong { color: #b4a3ff; }
+
+.titan-page .titan-process {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.titan-page .titan-final-route {
+  background: radial-gradient(circle at 75% 25%, rgba(148,130,255,0.22), transparent 28rem), #06101d;
+  border-top: 1px solid var(--rx-line);
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+@media (max-width: 1060px) {
+  .titan-page .titan-hero-grid,
+  .titan-page .titan-two,
+  .titan-page .titan-card-grid,
+  .titan-page .titan-fit-grid,
+  .titan-page .titan-evidence-grid,
+  .titan-page .titan-study-grid,
+  .titan-page .titan-faq-grid,
+  .titan-page .titan-doc-grid,
+  .titan-page .titan-process {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .titan-page .titan-hero { min-height: auto; }
+  .titan-page .titan-hero-visual::after {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    font-size: 0.52rem;
+    opacity: 0.78;
+  }
+  .titan-page .titan-hero-grid {
+    padding: 2.65rem 0 3.15rem;
+    gap: 1.15rem;
+  }
+  .titan-page h1 {
+    font-size: clamp(1.95rem, 9.4vw, 2.78rem) !important;
+    line-height: 1.02 !important;
+    max-width: 12.5ch !important;
+  }
+  .titan-page .rx-lead {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  .titan-page .titan-hero-panel { display: none; }
+  .titan-page .titan-profile-table { gap: 0.58rem; border: 0; background: transparent; }
+  .titan-page .titan-profile-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding: 0.85rem;
+    border: 1px solid var(--rx-line);
+    border-radius: 14px;
+    background: var(--rx-card);
+  }
+  .titan-page .titan-card,
+  .titan-page .titan-evidence-card,
+  .titan-page .titan-process article,
+  .titan-page .titan-faq-card,
+  .titan-page .titan-profile,
+  .titan-page .titan-fit-card {
+    padding: 0.88rem !important;
+    border-radius: 14px !important;
+  }
+  .titan-page .titan-final-route { padding: 2.65rem 0 !important; }
+}
