@@ -1,0 +1,254 @@
+/* SolarEX Documentation mobile refinement. Scope: /documentation/ mobile only. */
+@media (max-width: 760px) {
+  body.documentation-page {
+    --doc-grid: min(100% - 32px, 520px);
+    --doc-card-radius: 12px;
+    --doc-card-pad-y: 18px;
+    --doc-card-pad-x: 18px;
+    overflow-x: hidden;
+  }
+
+  .documentation-page .rx-header { min-height: 58px; }
+  .documentation-page .rx-brand small,
+  .documentation-page .rx-nav:not(.is-open) { display: none; }
+  .documentation-page .rx-menu-toggle,
+  .documentation-page .menu-toggle { min-width: 44px; min-height: 44px; }
+
+  .documentation-page .rx-shell,
+  .documentation-page .doc-table,
+  .documentation-page #document-library .doc-file-grid,
+  .documentation-page #backend-ready .doc-card-grid,
+  .documentation-page #documentation-faq .doc-faq-grid,
+  .documentation-page .doc-process {
+    width: var(--doc-grid) !important;
+    max-width: var(--doc-grid) !important;
+  }
+
+  .documentation-page .rx-section,
+  .documentation-page .doc-final-route {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .documentation-page .doc-hero { min-height: auto !important; }
+  .documentation-page .doc-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 42px 0 46px !important;
+  }
+
+  .documentation-page .rx-section-head.compact,
+  .documentation-page .rx-section-head.compact p:not(.rx-eyebrow),
+  .documentation-page .rx-section-head.compact h2 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: none !important;
+    text-align: left !important;
+  }
+
+  .documentation-page h1,
+  .documentation-page .doc-hero h1 {
+    max-width: 11.2ch !important;
+    font-size: clamp(36px, 10vw, 42px) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.04em !important;
+  }
+
+  .documentation-page h2,
+  .documentation-page #download-control h2 {
+    max-width: none !important;
+    font-size: clamp(28px, 8vw, 34px) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.038em !important;
+  }
+
+  .documentation-page h3,
+  .documentation-page .doc-card h3,
+  .documentation-page .doc-file-card h3,
+  .documentation-page .doc-route-card h3,
+  .documentation-page .doc-faq-card h3,
+  .documentation-page .doc-process article h3 {
+    font-size: 16.5px !important;
+    line-height: 1.22 !important;
+    min-height: 0 !important;
+  }
+
+  .documentation-page p,
+  .documentation-page li,
+  .documentation-page .rx-lead,
+  .documentation-page .doc-card p,
+  .documentation-page .doc-file-card p,
+  .documentation-page .doc-route-card p,
+  .documentation-page .doc-faq-card p,
+  .documentation-page .doc-process article p,
+  .documentation-page .doc-hero-panel p {
+    font-size: 14.8px !important;
+    line-height: 1.55 !important;
+  }
+
+  .documentation-page .rx-actions,
+  .documentation-page .rx-final-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    width: 100% !important;
+    justify-self: stretch !important;
+    align-items: stretch !important;
+  }
+
+  .documentation-page .rx-actions .rx-btn,
+  .documentation-page .rx-final-actions .rx-btn,
+  .documentation-page .rx-actions .rx-btn-secondary,
+  .documentation-page .rx-final-actions .rx-btn-secondary {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    height: 44px !important;
+    padding: 0 16px !important;
+    border-radius: 999px !important;
+    text-align: center !important;
+    justify-content: center !important;
+    font-size: 14.5px !important;
+  }
+
+  .documentation-page .doc-hero-panel,
+  .documentation-page .doc-card,
+  .documentation-page .doc-file-card,
+  .documentation-page .doc-route-card,
+  .documentation-page .doc-faq-card,
+  .documentation-page .doc-process article {
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 18px !important;
+    border-radius: 12px !important;
+  }
+
+  .documentation-page .rx-two-col,
+  .documentation-page #download-control .rx-two-col,
+  .documentation-page .doc-card-grid,
+  .documentation-page #documentation-principle .doc-card-grid,
+  .documentation-page .doc-file-grid,
+  .documentation-page .doc-two,
+  .documentation-page #download-control .doc-two,
+  .documentation-page .doc-process,
+  .documentation-page #backend-ready .doc-card-grid,
+  .documentation-page #documentation-faq .doc-faq-grid,
+  .documentation-page .doc-final-route .rx-final-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .documentation-page #documentation-principle .doc-card:nth-child(3) { grid-column: auto !important; }
+  .documentation-page #documentation-principle .doc-card .doc-badge { display: none !important; }
+  .documentation-page #documentation-principle .doc-card {
+    display: grid !important;
+    grid-template-columns: 32px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    align-items: start !important;
+  }
+  .documentation-page #documentation-principle .doc-card::before {
+    content: attr(data-mobile-step);
+    color: var(--rx-blue, #61c7ff);
+    font: 800 12px/1 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: 0.08em;
+    padding-top: 2px;
+  }
+  .documentation-page #documentation-principle .doc-card h3,
+  .documentation-page #documentation-principle .doc-card p { grid-column: 2; margin-top: 0 !important; }
+
+  .documentation-page #document-library .doc-file-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .documentation-page .doc-table {
+    display: grid !important;
+    gap: 12px !important;
+    border: 0 !important;
+    background: transparent !important;
+    overflow: visible !important;
+  }
+  .documentation-page .doc-head-row { display: none !important; }
+  .documentation-page .doc-table-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+    padding: 18px !important;
+    border: 1px solid var(--doc-card-border, rgba(124, 200, 255, 0.20)) !important;
+    border-radius: 12px !important;
+    background: var(--doc-card-bg, rgba(13, 29, 49, 0.88)) !important;
+  }
+
+  .documentation-page #download-control h2 { max-width: 13.5ch !important; }
+
+  .documentation-page .doc-process {
+    border-left: 1px solid rgba(97, 199, 255, 0.22);
+    padding-left: 16px;
+  }
+  .documentation-page .doc-process article {
+    position: relative;
+    padding: 0 0 18px 18px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  .documentation-page .doc-process .doc-number { display: none !important; }
+
+  .documentation-page #documentation-faq .doc-faq-grid.is-enhanced { display: grid !important; gap: 10px !important; }
+  .documentation-page #documentation-faq .doc-faq-grid.is-enhanced .doc-faq-card {
+    display: block !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  .documentation-page #documentation-faq .doc-faq-grid:not(.is-enhanced) .doc-faq-card p {
+    display: none;
+  }
+  .documentation-page .doc-mobile-faq-toggle {
+    width: 100%;
+    min-height: 48px;
+    padding: 14px 44px 14px 16px;
+    border: 1px solid var(--doc-card-border, rgba(124, 200, 255, 0.20));
+    border-radius: 12px;
+    background: var(--doc-card-bg, rgba(13, 29, 49, 0.88));
+    color: #f7fbff;
+    text-align: left;
+    font: 700 15.5px/1.25 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    position: relative;
+  }
+  .documentation-page .doc-mobile-faq-toggle::after {
+    content: '+';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #61c7ff;
+    font-weight: 800;
+  }
+  .documentation-page .doc-mobile-faq-toggle[aria-expanded='true']::after { content: '-'; }
+  .documentation-page .doc-mobile-faq-panel { display: none; padding: 14px 16px 16px; }
+  .documentation-page .doc-mobile-faq-panel.is-open { display: block; }
+
+  .documentation-page .doc-final-route h2,
+  .documentation-page .doc-final-route p,
+  .documentation-page .doc-final-route .rx-eyebrow { text-align: left !important; }
+
+  .documentation-page .rx-footer-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+  .documentation-page .rx-footer,
+  .documentation-page .rx-footer p,
+  .documentation-page .rx-footer a,
+  .documentation-page .rx-footer span,
+  .documentation-page .rx-footer strong {
+    font-size: 14px !important;
+    line-height: 1.58 !important;
+  }
+  .documentation-page .rx-footer a { min-height: 32px; display: inline-flex; align-items: center; }
+}
