@@ -1,0 +1,39 @@
+/* Documentation desktop validation hotfix - scoped pilot correction only.
+   Purpose: remove the oversized right-side hero placeholder capsule seen in desktop review screenshots
+   while preserving structure, copy, CTA layout, and all non-hero placeholder audit tags. */
+
+@media (min-width: 761px) {
+  .documentation-page .doc-hero {
+    min-height: 620px;
+  }
+
+  .documentation-page .doc-hero-visual.visual-placeholder {
+    outline: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    pointer-events: none;
+  }
+
+  .documentation-page .doc-hero-visual.visual-placeholder::after,
+  .documentation-page .doc-hero-visual .rx-manual-asset-tag {
+    content: '' !important;
+    display: none !important;
+  }
+
+  .documentation-page .doc-hero-grid {
+    grid-template-columns: minmax(0, 0.96fr) minmax(320px, 420px);
+    align-items: center;
+    padding: 5.8rem 0 4.9rem;
+  }
+
+  .documentation-page .doc-hero-panel {
+    justify-self: end;
+    width: min(100%, 420px);
+  }
+}
+
+@media (min-width: 1061px) {
+  .documentation-page .doc-hero-grid {
+    gap: clamp(2.6rem, 6vw, 5rem);
+  }
+}
