@@ -1,0 +1,23 @@
+{
+  "generated": "2026-06-17 Europe/Oslo",
+  "route": "/titan/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "SolarEX-pres/SolarEX-Titan-TiO-Coating-or-Active-Photocatalytic-PV-Glass.pdf",
+    "SolarEX-pres/SolarEX-Titan-TiO-Coating-or-Active-Photocatalytic-PV-Glass folder",
+    "SolarEX - Titan - PV³ Experts - Solar Module Study.pdf",
+    "SolarEX Titan Edition - Application Instructions v 2.8"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-TITAN-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-TITAN-HERO-001","target_path":"assets/img/titan/titan-hero-active-tio2.webp"},
+    {"placeholder_id":"VIS-TITAN-PATHWAY-001","section":"Active pathway","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-PATHWAY-001","target_path":"assets/img/titan/titan-active-pathway.webp"},
+    {"placeholder_id":"VIS-TITAN-MECHANISM-001","section":"How Titan works","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-MECHANISM-001","target_path":"assets/img/titan/titan-mechanism.webp"},
+    {"placeholder_id":"VIS-TITAN-TECHNICAL-PROFILE-001","section":"Technical profile","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-TECHNICAL-PROFILE-001","target_path":"assets/img/titan/titan-technical-profile.webp"},
+    {"placeholder_id":"VIS-TITAN-FIT-001","section":"Where Titan performs best","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-FIT-001","target_path":"assets/img/titan/titan-fit.webp"},
+    {"placeholder_id":"VIS-TITAN-EVIDENCE-001","section":"Titan study evidence","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-EVIDENCE-001","target_path":"assets/img/titan/titan-evidence.webp"},
+    {"placeholder_id":"VIS-TITAN-SEQUENCE-001","section":"Photocatalytic sequence","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-SEQUENCE-001","target_path":"assets/img/titan/titan-photocatalytic-sequence.webp"},
+    {"placeholder_id":"VIS-TITAN-APPLICATION-001","section":"Application and activation","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-APPLICATION-001","target_path":"assets/img/titan/titan-application.webp"},
+    {"placeholder_id":"VIS-TITAN-SELECTION-001","section":"Pathway selection","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-SELECTION-001","target_path":"assets/img/titan/titan-selection.webp"},
+    {"placeholder_id":"VIS-TITAN-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-TITAN-FAQ-001","target_path":"assets/img/titan/titan-faq.webp"}
+  ]
+}
