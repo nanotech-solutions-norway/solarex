@@ -1,0 +1,27 @@
+{
+  "generated": "2026-06-17 Europe/Oslo",
+  "route": "/case-studies/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "Future_Website_Creation_Playbook_Blueprint_1507_13062026.docx",
+    "SolarEX International SEO and Marketing Strategy Report 01_46, 24.05.2026.docx",
+    "SolarEX SEO/AEO/GEO GitHub Pages Website Implementation Plan",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review folder",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pptx",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pdf",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies folder",
+    "SolarEX - Quartz - InterCos PV plant material",
+    "SolarEX - Titan - PV3 Experts - Solar Module Study.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-CASE-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-CASE-HERO-001","target_path":"assets/img/case-studies/case-hero-evidence-contexts.webp"},
+    {"placeholder_id":"VIS-CASE-PRINCIPLE-001","section":"Case-study principle","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CASE-PRINCIPLE-001","target_path":"assets/img/case-studies/case-principle.webp"},
+    {"placeholder_id":"VIS-CASE-LIBRARY-001","section":"Case library","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CASE-LIBRARY-001","target_path":"assets/img/case-studies/case-library.webp"},
+    {"placeholder_id":"VIS-CASE-MATRIX-001","section":"Case matrix","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CASE-MATRIX-001","target_path":"assets/img/case-studies/case-matrix.webp"},
+    {"placeholder_id":"VIS-CASE-TITAN-001","section":"Titan study context","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CASE-TITAN-001","target_path":"assets/img/case-studies/case-titan-study.webp"},
+    {"placeholder_id":"VIS-CASE-QUARTZ-001","section":"Quartz regional context","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CASE-QUARTZ-001","target_path":"assets/img/case-studies/case-quartz-regional.webp"},
+    {"placeholder_id":"VIS-CASE-PILOT-METHOD-001","section":"Pilot methodology","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CASE-PILOT-METHOD-001","target_path":"assets/img/case-studies/case-pilot-method.webp"},
+    {"placeholder_id":"VIS-CASE-CONVERSION-001","section":"Conversion paths","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CASE-CONVERSION-001","target_path":"assets/img/case-studies/case-conversion-paths.webp"},
+    {"placeholder_id":"VIS-CASE-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CASE-FAQ-001","target_path":"assets/img/case-studies/case-faq.webp"}
+  ]
+}
