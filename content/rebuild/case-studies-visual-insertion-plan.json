@@ -1,0 +1,29 @@
+{
+  "generated": "2026-06-17 Europe/Oslo",
+  "route": "/case-studies/",
+  "status": "VISUAL_INSERTION_PLANNED_WITH_MANUAL_ASSET_TAGS",
+  "binary_asset_connector_status": "PENDING_MANUAL_UPLOAD",
+  "note": "Final binary visual assets are not inserted through the current text-file connector. Existing placeholders are retained and mapped to manual insertion tags.",
+  "source_authority": [
+    "Future_Website_Creation_Playbook_Blueprint_1507_13062026.docx",
+    "SolarEX International SEO and Marketing Strategy Report 01_46, 24.05.2026.docx",
+    "SolarEX SEO/AEO/GEO GitHub Pages Website Implementation Plan",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review folder",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pptx",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pdf",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies folder",
+    "SolarEX - Quartz - InterCos PV plant material",
+    "SolarEX - Titan - PV3 Experts - Solar Module Study.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-CASE-HERO-001","manual_asset_tag":"MANUAL-ASSET-CASE-HERO-001","target_path":"assets/img/case-studies/case-hero-evidence-contexts.webp","status":"PENDING_BINARY_UPLOAD"},
+    {"placeholder_id":"VIS-CASE-PRINCIPLE-001","manual_asset_tag":"MANUAL-ASSET-CASE-PRINCIPLE-001","target_path":"assets/img/case-studies/case-principle.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CASE-LIBRARY-001","manual_asset_tag":"MANUAL-ASSET-CASE-LIBRARY-001","target_path":"assets/img/case-studies/case-library.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CASE-MATRIX-001","manual_asset_tag":"MANUAL-ASSET-CASE-MATRIX-001","target_path":"assets/img/case-studies/case-matrix.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CASE-TITAN-001","manual_asset_tag":"MANUAL-ASSET-CASE-TITAN-001","target_path":"assets/img/case-studies/case-titan-study.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CASE-QUARTZ-001","manual_asset_tag":"MANUAL-ASSET-CASE-QUARTZ-001","target_path":"assets/img/case-studies/case-quartz-regional.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CASE-PILOT-METHOD-001","manual_asset_tag":"MANUAL-ASSET-CASE-PILOT-METHOD-001","target_path":"assets/img/case-studies/case-pilot-method.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CASE-CONVERSION-001","manual_asset_tag":"MANUAL-ASSET-CASE-CONVERSION-001","target_path":"assets/img/case-studies/case-conversion-paths.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CASE-FAQ-001","manual_asset_tag":"MANUAL-ASSET-CASE-FAQ-001","target_path":"assets/img/case-studies/case-faq.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"}
+  ]
+}
