@@ -1,0 +1,25 @@
+{
+  "generated": "2026-06-17 Europe/Oslo",
+  "route": "/titan/",
+  "status": "VISUAL_INSERTION_PLANNED_WITH_MANUAL_ASSET_TAGS",
+  "binary_asset_connector_status": "PENDING_MANUAL_UPLOAD",
+  "note": "Final binary visual assets are not inserted through the current text-file connector. Existing placeholders are retained and mapped to manual insertion tags.",
+  "source_authority": [
+    "SolarEX-pres/SolarEX-Titan-TiO-Coating-or-Active-Photocatalytic-PV-Glass.pdf",
+    "SolarEX-pres/SolarEX-Titan-TiO-Coating-or-Active-Photocatalytic-PV-Glass folder",
+    "SolarEX - Titan - PV3 Experts - Solar Module Study.pdf",
+    "SolarEX Titan Edition - Application Instructions v 2.8"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-TITAN-HERO-001","manual_asset_tag":"MANUAL-ASSET-TITAN-HERO-001","target_path":"assets/img/titan/titan-hero-active-tio2.webp","status":"PENDING_BINARY_UPLOAD"},
+    {"placeholder_id":"VIS-TITAN-PATHWAY-001","manual_asset_tag":"MANUAL-ASSET-TITAN-PATHWAY-001","target_path":"assets/img/titan/titan-active-pathway.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TITAN-MECHANISM-001","manual_asset_tag":"MANUAL-ASSET-TITAN-MECHANISM-001","target_path":"assets/img/titan/titan-mechanism.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TITAN-TECHNICAL-PROFILE-001","manual_asset_tag":"MANUAL-ASSET-TITAN-TECHNICAL-PROFILE-001","target_path":"assets/img/titan/titan-technical-profile.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TITAN-FIT-001","manual_asset_tag":"MANUAL-ASSET-TITAN-FIT-001","target_path":"assets/img/titan/titan-fit.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TITAN-EVIDENCE-001","manual_asset_tag":"MANUAL-ASSET-TITAN-EVIDENCE-001","target_path":"assets/img/titan/titan-evidence.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TITAN-SEQUENCE-001","manual_asset_tag":"MANUAL-ASSET-TITAN-SEQUENCE-001","target_path":"assets/img/titan/titan-photocatalytic-sequence.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TITAN-APPLICATION-001","manual_asset_tag":"MANUAL-ASSET-TITAN-APPLICATION-001","target_path":"assets/img/titan/titan-application.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TITAN-SELECTION-001","manual_asset_tag":"MANUAL-ASSET-TITAN-SELECTION-001","target_path":"assets/img/titan/titan-selection.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-TITAN-FAQ-001","manual_asset_tag":"MANUAL-ASSET-TITAN-FAQ-001","target_path":"assets/img/titan/titan-faq.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"}
+  ]
+}
