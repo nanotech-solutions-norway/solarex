@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadScript('quartz-visual-insertion-tags.js', 'data-solarex-quartz-visual-tags-js');
   loadScript('titan-visual-insertion-tags.js', 'data-solarex-titan-visual-tags-js');
   loadScript('proof-results-visual-insertion-tags.js', 'data-solarex-proof-visual-tags-js');
+  loadScript('projects-visual-insertion-tags.js', 'data-solarex-projects-visual-tags-js');
 
   const button = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#primary-nav');
