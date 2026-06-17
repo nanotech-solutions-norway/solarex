@@ -1,15 +1,89 @@
-/* SolarEX Documentation page phase 1 - structure, content and visual placeholders only. */
+/* SolarEX Documentation page phase 1 + detailed visual refinement v2.
+   Source: SolarEX Documentation Page Detailed Visual Assessment Memo 12:24, 17.06.2026.
+   Scope: /documentation/ only. No content, claims, direct downloads, SQL/backend, Wix or binary visual changes. */
+
 body.documentation-page {
   margin: 0;
   color: var(--rx-text, #f4f7fb);
   background: radial-gradient(circle at 72% 10%, rgba(97,199,255,0.16), transparent 25rem), #06101d;
-  font-family: Georgia, 'Libre Baskerville', serif;
+  --doc-grid: min(1120px, calc(100vw - 72px));
+  --doc-gap: 20px;
+  --doc-card-pad-y: 22px;
+  --doc-card-pad-x: 24px;
+  --doc-card-radius: 14px;
+  --doc-card-border: rgba(124, 200, 255, 0.20);
+  --doc-card-bg: rgba(13, 29, 49, 0.88);
+  --doc-muted: rgba(220, 234, 247, 0.82);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+.documentation-page h1,
+.documentation-page h2 {
+  font-family: Georgia, 'Libre Baskerville', serif;
+  color: #f7fbff;
+  letter-spacing: -0.045em;
+}
+
+.documentation-page h3,
+.documentation-page p,
+.documentation-page li,
+.documentation-page a,
+.documentation-page span,
+.documentation-page strong,
+.documentation-page .rx-lead,
+.documentation-page .rx-btn,
+.documentation-page .doc-table-row {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.documentation-page p,
+.documentation-page li {
+  color: var(--doc-muted);
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.documentation-page .rx-shell {
+  width: var(--doc-grid);
+  max-width: var(--doc-grid);
+}
+
+.documentation-page .rx-section {
+  padding-top: clamp(72px, 7vw, 104px);
+  padding-bottom: clamp(72px, 7vw, 104px);
+}
+
+.documentation-page .rx-section-head.compact {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.documentation-page .rx-section-head.compact .rx-eyebrow,
+.documentation-page .rx-eyebrow {
+  margin-bottom: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.documentation-page .rx-section-head.compact p:not(.rx-eyebrow) {
+  max-width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+/* Hero */
 .documentation-page .doc-hero {
   position: relative;
   overflow: hidden;
-  min-height: 690px;
+  min-height: 610px;
   display: grid;
   align-items: center;
   border-bottom: 1px solid var(--rx-line);
@@ -20,7 +94,7 @@ body.documentation-page {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(90deg, rgba(2,8,16,0.96), rgba(8,22,39,0.88) 52%, rgba(8,22,39,0.36));
+  background: linear-gradient(90deg, rgba(2,8,16,0.96), rgba(8,22,39,0.88) 56%, rgba(8,22,39,0.36));
 }
 
 .documentation-page .doc-hero-visual {
@@ -31,59 +105,130 @@ body.documentation-page {
 
 .documentation-page .doc-hero-visual > * { display: none !important; }
 
-.documentation-page .doc-hero-visual::after {
-  content: attr(data-placeholder-id);
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  padding: 0.28rem 0.55rem;
-  border: 1px solid rgba(215,186,106,0.38);
-  border-radius: 999px;
-  background: rgba(6,16,29,0.72);
-  color: rgba(240,217,139,0.88);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 0.66rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  pointer-events: none;
+.documentation-page .doc-hero-visual.visual-placeholder {
+  outline: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+}
+
+.documentation-page .doc-hero-visual.visual-placeholder::after,
+.documentation-page .doc-hero-visual .rx-manual-asset-tag {
+  content: '' !important;
+  display: none !important;
 }
 
 .documentation-page .doc-hero-grid {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 390px;
-  gap: clamp(2rem, 5vw, 4rem);
-  align-items: end;
-  padding: 7rem 0 5.5rem;
+  grid-template-columns: minmax(0, 56%) minmax(380px, 44%);
+  column-gap: 56px;
+  align-items: center;
+  padding: clamp(82px, 7vw, 104px) 0 clamp(72px, 6vw, 92px);
 }
 
+.documentation-page .doc-hero h1 {
+  max-width: 10.6ch;
+  font-size: clamp(58px, 5.15vw, 64px);
+  line-height: 1.045;
+}
+
+.documentation-page .doc-hero .rx-lead {
+  max-width: 650px;
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+.documentation-page .doc-hero-panel {
+  justify-self: end;
+  width: min(100%, 440px);
+  padding: 22px 24px;
+}
+
+.documentation-page .doc-hero-panel div {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.documentation-page .doc-hero-panel div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Shared card system */
 .documentation-page .doc-hero-panel,
 .documentation-page .doc-card,
 .documentation-page .doc-file-card,
 .documentation-page .doc-process article,
 .documentation-page .doc-faq-card,
 .documentation-page .doc-route-card {
-  background: var(--rx-card, rgba(13, 29, 49, 0.88));
-  border: 1px solid var(--rx-line, rgba(124, 200, 255, 0.18));
-  border-radius: var(--rx-radius, 22px);
-  padding: 1.2rem;
+  background: var(--doc-card-bg);
+  border: 1px solid var(--doc-card-border);
+  border-radius: var(--doc-card-radius);
+  padding: var(--doc-card-pad-y) var(--doc-card-pad-x);
   box-shadow: 0 16px 50px rgba(0,0,0,0.16);
 }
 
-.documentation-page .doc-hero-panel { display: grid; gap: 0.85rem; }
-.documentation-page .doc-hero-panel div { padding-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
-.documentation-page .doc-hero-panel div:last-child { border-bottom: 0; padding-bottom: 0; }
+.documentation-page .doc-card,
+.documentation-page .doc-file-card,
+.documentation-page .doc-route-card,
+.documentation-page .doc-faq-card,
+.documentation-page .doc-process article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+}
 
 .documentation-page .doc-badge,
 .documentation-page .doc-number,
 .documentation-page .doc-hero-panel span {
   color: var(--rx-blue, #61c7ff);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 0.74rem;
+  font-size: 12px;
+  line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.13em;
   font-weight: 800;
+}
+
+.documentation-page h2 {
+  font-size: clamp(40px, 3.7vw, 46px);
+  line-height: 1.06;
+  margin-bottom: 16px;
+}
+
+.documentation-page h3 {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  color: #f4f8ff;
+  font-size: clamp(18px, 1.45vw, 20px);
+  line-height: 1.22;
+}
+
+.documentation-page .doc-card p,
+.documentation-page .doc-file-card p,
+.documentation-page .doc-route-card p,
+.documentation-page .doc-faq-card p,
+.documentation-page .doc-process article p,
+.documentation-page .doc-hero-panel p {
+  margin-bottom: 0;
+  font-size: 15.5px;
+  line-height: 1.56;
+}
+
+.documentation-page .visual-placeholder:not(.doc-hero-visual) {
+  outline: 1px dashed rgba(215,186,106,0.28);
+  outline-offset: 2px;
+}
+
+/* Layout systems */
+.documentation-page .rx-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 44%) minmax(0, 56%);
+  column-gap: 64px;
+  align-items: center;
 }
 
 .documentation-page .doc-card-grid,
@@ -92,90 +237,296 @@ body.documentation-page {
 .documentation-page .doc-doc-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 18px 20px;
 }
 
 .documentation-page .doc-two {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.15rem;
+  gap: 20px;
+  align-items: stretch;
 }
 
+/* Documentation Principles: memo requires 2 + 1 instead of 3 narrow cards. */
+.documentation-page #documentation-principle .doc-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-self: start;
+}
+
+.documentation-page #documentation-principle .doc-card:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.documentation-page #documentation-principle .doc-card h3 {
+  min-height: auto;
+}
+
+/* Document library: stable 3 x 2 grid. */
+.documentation-page #document-library .doc-file-grid {
+  width: min(100%, 980px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.documentation-page #document-library .doc-file-card {
+  min-height: 205px;
+}
+
+/* Matrix table */
 .documentation-page .doc-table {
   display: grid;
-  border: 1px solid var(--rx-line);
-  border-radius: var(--rx-radius, 22px);
+  width: min(100%, 980px);
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
-  background: var(--rx-card);
+  border: 1px solid var(--rx-line);
+  border-radius: 16px;
+  background: var(--doc-card-bg);
 }
 
 .documentation-page .doc-table-row {
   display: grid;
-  grid-template-columns: 1fr 1.25fr 1.6fr;
-  gap: 1rem;
-  padding: 0.92rem 1rem;
+  grid-template-columns: 1.05fr 1.18fr 1.74fr;
+  gap: 20px;
+  align-items: center;
+  padding: 14px 16px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 15px;
+  line-height: 1.45;
 }
+
 .documentation-page .doc-table-row:last-child { border-bottom: 0; }
 .documentation-page .doc-table-row strong { color: var(--rx-blue, #61c7ff); }
-.documentation-page .doc-head-row { background: rgba(97,199,255,0.1); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 700; }
+.documentation-page .doc-head-row { background: rgba(97,199,255,0.1); font-weight: 700; }
 
+/* Download control: two wider cards, vertically centered. */
+.documentation-page #download-control .rx-two-col {
+  grid-template-columns: minmax(0, 46%) minmax(0, 54%);
+  align-items: center;
+}
+
+.documentation-page #download-control h2 {
+  max-width: 10.8ch;
+  font-size: clamp(40px, 3.65vw, 46px);
+}
+
+.documentation-page #download-control .doc-two {
+  justify-self: end;
+  width: min(100%, 620px);
+}
+
+.documentation-page #download-control .doc-route-card {
+  min-height: 184px;
+}
+
+/* Review flow: memo prefers 2 x 2 when copy volume remains. */
 .documentation-page .doc-process {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 20px;
+  width: min(100%, 880px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.documentation-page .doc-process article {
+  min-height: 172px;
+}
+
+.documentation-page .doc-process article h3 {
+  min-height: auto;
+}
+
+/* Backend readiness: keep 3-card row with consistent height. */
+.documentation-page #backend-ready .doc-card-grid {
+  width: min(100%, 940px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.documentation-page #backend-ready .doc-card {
+  min-height: 184px;
+}
+
+/* FAQ: confirmed 2 x 2 balanced layout. */
+.documentation-page #documentation-faq .doc-faq-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 820px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.documentation-page #documentation-faq .doc-faq-card {
+  min-height: 158px;
+}
+
+/* Final CTA and buttons */
+.documentation-page .rx-actions,
+.documentation-page .rx-final-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.documentation-page .rx-actions .rx-btn,
+.documentation-page .rx-final-actions .rx-btn {
+  min-height: 42px;
+  border-radius: 999px;
+  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 14.5px;
+  line-height: 1;
+}
+
+.documentation-page .rx-actions .rx-btn-secondary {
+  min-width: 168px;
 }
 
 .documentation-page .doc-final-route {
   background: radial-gradient(circle at 75% 25%, rgba(14,165,233,0.22), transparent 28rem), #06101d;
   border-top: 1px solid var(--rx-line);
-  padding: clamp(4.5rem, 8vw, 7rem) 0;
+  padding: clamp(72px, 7vw, 104px) 0;
 }
 
+.documentation-page .doc-final-route .rx-final-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: center;
+  gap: 64px;
+}
+
+.documentation-page .rx-final-actions {
+  flex-direction: column;
+  align-items: stretch;
+  justify-self: end;
+  width: 220px;
+  gap: 10px;
+}
+
+.documentation-page .rx-final-actions .rx-btn {
+  width: 210px;
+  height: 42px;
+  padding: 0 16px;
+}
+
+/* Footer readability */
+.documentation-page .rx-footer,
+.documentation-page .rx-footer p,
+.documentation-page .rx-footer a,
+.documentation-page .rx-footer span,
+.documentation-page .rx-footer strong {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.documentation-page .rx-footer-grid {
+  gap: 28px;
+}
+
+/* Tablet */
 @media (max-width: 1060px) {
+  body.documentation-page {
+    --doc-grid: min(94vw, 880px);
+  }
+
   .documentation-page .doc-hero-grid,
-  .documentation-page .doc-two,
+  .documentation-page .rx-two-col,
+  .documentation-page .doc-final-route .rx-final-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .documentation-page .doc-hero-panel,
+  .documentation-page #download-control .doc-two,
+  .documentation-page .rx-final-actions {
+    justify-self: start;
+    width: min(100%, 640px);
+  }
+
   .documentation-page .doc-card-grid,
   .documentation-page .doc-file-grid,
-  .documentation-page .doc-faq-grid,
   .documentation-page .doc-doc-grid,
-  .documentation-page .doc-process {
-    grid-template-columns: 1fr;
+  .documentation-page #backend-ready .doc-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+/* Mobile: preserve approved mobile rhythm while keeping readability. */
 @media (max-width: 760px) {
-  .documentation-page .doc-hero { min-height: auto; }
-  .documentation-page .doc-hero-visual::after {
-    right: 0.75rem;
-    bottom: 0.75rem;
-    font-size: 0.52rem;
-    opacity: 0.78;
+  body.documentation-page {
+    --doc-grid: min(100% - 32px, 520px);
+    --doc-card-pad-y: 0.88rem;
+    --doc-card-pad-x: 0.88rem;
   }
+
+  .documentation-page .rx-section,
+  .documentation-page .doc-final-route {
+    padding-top: 2.65rem !important;
+    padding-bottom: 2.65rem !important;
+  }
+
+  .documentation-page .doc-hero { min-height: auto; }
+
   .documentation-page .doc-hero-grid {
+    grid-template-columns: 1fr;
     padding: 2.65rem 0 3.15rem;
     gap: 1.15rem;
   }
+
+  .documentation-page .doc-hero h1,
   .documentation-page h1 {
     font-size: clamp(1.95rem, 9.4vw, 2.78rem) !important;
     line-height: 1.02 !important;
     max-width: 12.5ch !important;
   }
-  .documentation-page .rx-lead {
+
+  .documentation-page h2 {
+    font-size: clamp(1.72rem, 7.6vw, 2.35rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  .documentation-page .rx-lead,
+  .documentation-page p,
+  .documentation-page li {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
   }
+
   .documentation-page .doc-hero-panel { display: none; }
-  .documentation-page .doc-table { gap: 0.58rem; border: 0; background: transparent; }
+
+  .documentation-page .rx-two-col,
+  .documentation-page .doc-card-grid,
+  .documentation-page .doc-file-grid,
+  .documentation-page .doc-faq-grid,
+  .documentation-page .doc-doc-grid,
+  .documentation-page .doc-process,
+  .documentation-page .doc-two,
+  .documentation-page .doc-final-route .rx-final-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.88rem !important;
+  }
+
+  .documentation-page .doc-table {
+    gap: 0.58rem;
+    border: 0;
+    background: transparent;
+  }
+
   .documentation-page .doc-table-row {
     grid-template-columns: 1fr;
     gap: 0.35rem;
     padding: 0.85rem;
     border: 1px solid var(--rx-line);
     border-radius: 14px;
-    background: var(--rx-card);
+    background: var(--doc-card-bg);
   }
+
   .documentation-page .doc-head-row { display: none; }
+
   .documentation-page .doc-card,
   .documentation-page .doc-file-card,
   .documentation-page .doc-process article,
@@ -183,240 +534,19 @@ body.documentation-page {
   .documentation-page .doc-route-card {
     padding: 0.88rem !important;
     border-radius: 14px !important;
-  }
-  .documentation-page .doc-final-route { padding: 2.65rem 0 !important; }
-}
-
-/* Documentation visual refinement pass - embedded in loaded stylesheet.
-   Source: SolarEX Documentation Page Visual Assessment Memo 13:53, 17.06.2026.
-   Scope: Documentation page only. No content, claim, download, SQL or binary visual changes. */
-@media (min-width: 761px) {
-  .documentation-page {
-    --doc-grid: min(1120px, calc(100vw - 72px));
-    --doc-gap: clamp(1rem, 1.55vw, 1.25rem);
-    --doc-card-pad: clamp(1.15rem, 1.55vw, 1.5rem);
-  }
-
-  .documentation-page .rx-shell {
-    width: var(--doc-grid) !important;
-    max-width: var(--doc-grid) !important;
-  }
-
-  .documentation-page .rx-section {
-    padding-top: clamp(4.6rem, 6.5vw, 6.4rem) !important;
-    padding-bottom: clamp(4.6rem, 6.5vw, 6.4rem) !important;
-  }
-
-  .documentation-page .rx-section-head.compact {
-    max-width: 760px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center !important;
-  }
-
-  .documentation-page .doc-hero {
-    min-height: 590px !important;
-  }
-
-  .documentation-page .doc-hero-visual.visual-placeholder {
-    outline: 0 !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    pointer-events: none !important;
-  }
-
-  .documentation-page .doc-hero-visual.visual-placeholder::after,
-  .documentation-page .doc-hero-visual .rx-manual-asset-tag {
-    content: '' !important;
-    display: none !important;
-  }
-
-  .documentation-page .doc-hero-grid {
-    grid-template-columns: minmax(0, 0.98fr) minmax(330px, 430px) !important;
-    align-items: center !important;
-    gap: clamp(3rem, 6vw, 5.4rem) !important;
-    padding-top: clamp(5rem, 7vw, 6.1rem) !important;
-    padding-bottom: clamp(4.2rem, 6vw, 5.2rem) !important;
-  }
-
-  .documentation-page .doc-hero h1 {
-    max-width: 10.8ch !important;
-    font-size: clamp(3.5rem, 5.05vw, 4rem) !important;
-    line-height: 1.035 !important;
-    letter-spacing: -0.045em !important;
-  }
-
-  .documentation-page .doc-hero .rx-lead {
-    max-width: 650px !important;
-    font-size: clamp(0.96rem, 1vw, 1.02rem) !important;
-    line-height: 1.66 !important;
-  }
-
-  .documentation-page .doc-hero-panel {
-    align-self: center !important;
-    justify-self: end !important;
-    width: min(100%, 430px) !important;
-    padding: 1.35rem !important;
+    min-height: auto !important;
   }
 
   .documentation-page .rx-actions,
   .documentation-page .rx-final-actions {
-    display: flex !important;
-    align-items: center !important;
-    flex-wrap: nowrap !important;
-    gap: 0.72rem !important;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
   }
 
   .documentation-page .rx-actions .rx-btn,
   .documentation-page .rx-final-actions .rx-btn {
-    min-height: 42px !important;
-    border-radius: 999px !important;
-    padding: 0.72rem 1.18rem !important;
-    font-size: 0.88rem !important;
-    line-height: 1 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    white-space: nowrap !important;
-  }
-
-  .documentation-page .rx-actions .rx-btn-secondary {
-    min-width: 160px !important;
-  }
-
-  .documentation-page h2 {
-    font-size: clamp(2.55rem, 4vw, 3rem) !important;
-    line-height: 1.04 !important;
-    letter-spacing: -0.038em !important;
-  }
-
-  .documentation-page h3 {
-    font-size: clamp(1.06rem, 1.3vw, 1.2rem) !important;
-    line-height: 1.22 !important;
-  }
-
-  .documentation-page p,
-  .documentation-page li,
-  .documentation-page .doc-table-row,
-  .documentation-page .doc-card,
-  .documentation-page .doc-file-card,
-  .documentation-page .doc-route-card,
-  .documentation-page .doc-faq-card,
-  .documentation-page .doc-process article {
-    font-size: clamp(0.925rem, 0.96vw, 1rem) !important;
-    line-height: 1.62 !important;
-  }
-
-  .documentation-page .rx-two-col {
-    grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr) !important;
-    align-items: start !important;
-    gap: clamp(2rem, 5vw, 4.6rem) !important;
-  }
-
-  .documentation-page .doc-two {
-    align-items: stretch !important;
-  }
-
-  .documentation-page .doc-card-grid,
-  .documentation-page .doc-file-grid,
-  .documentation-page .doc-doc-grid,
-  .documentation-page .doc-process,
-  .documentation-page .doc-faq-grid {
-    gap: var(--doc-gap) !important;
-  }
-
-  .documentation-page .doc-card,
-  .documentation-page .doc-file-card,
-  .documentation-page .doc-route-card,
-  .documentation-page .doc-faq-card,
-  .documentation-page .doc-process article {
-    min-height: 100% !important;
-    padding: var(--doc-card-pad) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-  }
-
-  .documentation-page .doc-card h3,
-  .documentation-page .doc-file-card h3,
-  .documentation-page .doc-route-card h3,
-  .documentation-page .doc-faq-card h3,
-  .documentation-page .doc-process article h3 {
-    margin-top: 0.25rem !important;
-    min-height: 2.45em !important;
-  }
-
-  .documentation-page .doc-card p,
-  .documentation-page .doc-file-card p,
-  .documentation-page .doc-route-card p,
-  .documentation-page .doc-faq-card p,
-  .documentation-page .doc-process article p {
-    margin-bottom: 0 !important;
-  }
-
-  .documentation-page #documentation-principle .doc-card-grid {
-    align-self: start !important;
-  }
-
-  .documentation-page #download-control .rx-two-col {
-    align-items: center !important;
-  }
-
-  .documentation-page #download-control h2 {
-    font-size: clamp(2.45rem, 3.7vw, 2.9rem) !important;
-    max-width: 9.8ch !important;
-  }
-
-  .documentation-page #download-control .doc-two {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    max-width: 620px !important;
-    justify-self: end !important;
-  }
-
-  .documentation-page .doc-table {
-    width: min(100%, 940px) !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .documentation-page .doc-table-row {
-    grid-template-columns: 1.05fr 1.16fr 1.72fr !important;
-    gap: 1.2rem !important;
-    padding: 1.08rem 1.25rem !important;
-  }
-
-  .documentation-page .doc-head-row {
-    min-height: 48px !important;
-    align-items: center !important;
-  }
-
-  .documentation-page #documentation-faq .doc-faq-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    width: min(100%, 760px) !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .documentation-page #documentation-faq .doc-faq-card {
-    min-height: 150px !important;
-  }
-
-  .documentation-page .doc-final-route .rx-final-grid {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(190px, 220px) !important;
-    align-items: center !important;
-    gap: clamp(2rem, 5vw, 4rem) !important;
-  }
-
-  .documentation-page .rx-final-actions {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    justify-self: end !important;
-    width: min(100%, 220px) !important;
-    gap: 0.7rem !important;
-  }
-
-  .documentation-page .rx-final-actions .rx-btn {
     width: 100% !important;
+    min-width: 0 !important;
   }
 }
