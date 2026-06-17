@@ -1,0 +1,25 @@
+{
+  "generated": "2026-06-17 Europe/Oslo",
+  "route": "/projects/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "Future_Website_Creation_Playbook_Blueprint_1507_13062026.docx",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review folder",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pptx",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review.pdf",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies folder",
+    "SolarEX - Quartz - InterCos PV plant material",
+    "SolarEX - Titan - PV3 Experts - Solar Module Study.pdf"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-PROJECTS-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-PROJECTS-HERO-001","target_path":"assets/img/projects/projects-hero-pilot-review.webp"},
+    {"placeholder_id":"VIS-PROJECTS-PRINCIPLE-001","section":"Project principle","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROJECTS-PRINCIPLE-001","target_path":"assets/img/projects/projects-principle.webp"},
+    {"placeholder_id":"VIS-PROJECTS-ROUTES-001","section":"Project routes","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROJECTS-ROUTES-001","target_path":"assets/img/projects/projects-routes.webp"},
+    {"placeholder_id":"VIS-PROJECTS-WORKFLOW-001","section":"Project workflow","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROJECTS-WORKFLOW-001","target_path":"assets/img/projects/projects-workflow.webp"},
+    {"placeholder_id":"VIS-PROJECTS-PATHWAY-TABLE-001","section":"Pathway table","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROJECTS-PATHWAY-TABLE-001","target_path":"assets/img/projects/projects-pathway-table.webp"},
+    {"placeholder_id":"VIS-PROJECTS-PILOT-DESIGN-001","section":"Pilot design","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROJECTS-PILOT-DESIGN-001","target_path":"assets/img/projects/projects-pilot-design.webp"},
+    {"placeholder_id":"VIS-PROJECTS-EVIDENCE-001","section":"Evidence integration","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROJECTS-EVIDENCE-001","target_path":"assets/img/projects/projects-evidence.webp"},
+    {"placeholder_id":"VIS-PROJECTS-DELIVERABLES-001","section":"Project deliverables","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROJECTS-DELIVERABLES-001","target_path":"assets/img/projects/projects-deliverables.webp"},
+    {"placeholder_id":"VIS-PROJECTS-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-PROJECTS-FAQ-001","target_path":"assets/img/projects/projects-faq.webp"}
+  ]
+}
