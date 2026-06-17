@@ -1,0 +1,89 @@
+/* SolarEX global desktop hero placeholder hotfix.
+   Applied after Documentation pilot validation passed.
+   Scope: desktop hero placeholder treatment only. Keeps non-hero placeholder audit tags visible. */
+
+@media (min-width: 761px) {
+  .rx-hero .rx-hero-placeholder.visual-placeholder,
+  .technology-page .tech-hero-visual.visual-placeholder,
+  .quartz-page .quartz-hero-visual.visual-placeholder,
+  .titan-page .titan-hero-visual.visual-placeholder,
+  .proof-page .proof-hero-visual.visual-placeholder,
+  .projects-page .projects-hero-visual.visual-placeholder,
+  .case-studies-page .case-hero-visual.visual-placeholder,
+  .documentation-page .doc-hero-visual.visual-placeholder {
+    outline: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    pointer-events: none;
+  }
+
+  .rx-hero .rx-hero-placeholder.visual-placeholder > *,
+  .rx-hero .rx-hero-placeholder.visual-placeholder::after,
+  .rx-hero .rx-hero-placeholder .rx-manual-asset-tag,
+  .technology-page .tech-hero-visual.visual-placeholder::after,
+  .technology-page .tech-hero-visual .rx-manual-asset-tag,
+  .quartz-page .quartz-hero-visual.visual-placeholder::after,
+  .quartz-page .quartz-hero-visual .rx-manual-asset-tag,
+  .titan-page .titan-hero-visual.visual-placeholder::after,
+  .titan-page .titan-hero-visual .rx-manual-asset-tag,
+  .proof-page .proof-hero-visual.visual-placeholder::after,
+  .proof-page .proof-hero-visual .rx-manual-asset-tag,
+  .projects-page .projects-hero-visual.visual-placeholder::after,
+  .projects-page .projects-hero-visual .rx-manual-asset-tag,
+  .case-studies-page .case-hero-visual.visual-placeholder::after,
+  .case-studies-page .case-hero-visual .rx-manual-asset-tag,
+  .documentation-page .doc-hero-visual.visual-placeholder::after,
+  .documentation-page .doc-hero-visual .rx-manual-asset-tag {
+    content: '' !important;
+    display: none !important;
+  }
+
+  .rx-hero,
+  .technology-page .tech-hero,
+  .quartz-page .quartz-hero,
+  .titan-page .titan-hero,
+  .proof-page .proof-hero,
+  .projects-page .projects-hero,
+  .case-studies-page .case-hero,
+  .documentation-page .doc-hero {
+    min-height: 620px;
+  }
+
+  .rx-hero-grid,
+  .technology-page .tech-hero-grid,
+  .quartz-page .quartz-hero-grid,
+  .titan-page .titan-hero-grid,
+  .proof-page .proof-hero-grid,
+  .projects-page .projects-hero-grid,
+  .case-studies-page .case-hero-grid,
+  .documentation-page .doc-hero-grid {
+    grid-template-columns: minmax(0, 0.96fr) minmax(320px, 420px);
+    align-items: center;
+    padding: 5.8rem 0 4.9rem;
+  }
+
+  .rx-hero-panel,
+  .technology-page .tech-hero-panel,
+  .quartz-page .quartz-hero-panel,
+  .titan-page .titan-hero-panel,
+  .proof-page .proof-hero-panel,
+  .projects-page .projects-hero-panel,
+  .case-studies-page .case-hero-panel,
+  .documentation-page .doc-hero-panel {
+    justify-self: end;
+    width: min(100%, 420px);
+  }
+}
+
+@media (min-width: 1061px) {
+  .rx-hero-grid,
+  .technology-page .tech-hero-grid,
+  .quartz-page .quartz-hero-grid,
+  .titan-page .titan-hero-grid,
+  .proof-page .proof-hero-grid,
+  .projects-page .projects-hero-grid,
+  .case-studies-page .case-hero-grid,
+  .documentation-page .doc-hero-grid {
+    gap: clamp(2.6rem, 6vw, 5rem);
+  }
+}
