@@ -1,3 +1,5 @@
+@import url('/assets/css/documentation-visual-refinement.css');
+
 /* Documentation desktop validation hotfix - scoped pilot correction only.
    Purpose: remove the oversized right-side hero placeholder capsule seen in desktop review screenshots
    while preserving structure, copy, CTA layout, and all non-hero placeholder audit tags. */
