@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadCss('../css/mobile-structure-pass2.css', 'data-solarex-mobile-pass2');
   loadCss('../css/home-visual-insertion-tags.css', 'data-solarex-home-visual-tags-css');
   loadCss('../css/documentation-desktop-hotfix.css', 'data-solarex-doc-desktop-hotfix');
+  loadCss('../css/desktop-hero-placeholder-hotfix.css', 'data-solarex-global-hero-hotfix');
   loadScript('home-visual-insertion-tags.js', 'data-solarex-home-visual-tags-js');
   loadScript('technology-visual-insertion-tags.js', 'data-solarex-tech-visual-tags-js');
   loadScript('quartz-visual-insertion-tags.js', 'data-solarex-quartz-visual-tags-js');
