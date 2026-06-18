@@ -1,0 +1,27 @@
+{
+  "generated": "2026-06-18 Europe/Oslo",
+  "route": "/technical-review/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "Future_Website_Creation_Playbook_Blueprint_1507_13062026.docx",
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment folder",
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment.pptx",
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment.pdf",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review folder",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies folder",
+    "SolarEX Quartz Edition - Application Instructions",
+    "SolarEX Titan Edition - Application Instructions",
+    "SolarEX-ROI-Calculator folder",
+    "SolarEX_Admin_Dashboard_Blueprint"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-REVIEW-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-REVIEW-HERO-001","target_path":"assets/img/technical-review/review-hero-pilot-assessment.webp"},
+    {"placeholder_id":"VIS-REVIEW-PRINCIPLE-001","section":"Review principle","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-REVIEW-PRINCIPLE-001","target_path":"assets/img/technical-review/review-principle.webp"},
+    {"placeholder_id":"VIS-REVIEW-ROUTES-001","section":"Review routes","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-REVIEW-ROUTES-001","target_path":"assets/img/technical-review/review-routes.webp"},
+    {"placeholder_id":"VIS-REVIEW-WORKFLOW-001","section":"Review workflow","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-REVIEW-WORKFLOW-001","target_path":"assets/img/technical-review/review-workflow.webp"},
+    {"placeholder_id":"VIS-REVIEW-FORM-001","section":"Form preview","status":"STRUCTURE_ONLY_DISABLED_FORM","manual_asset_tag":"MANUAL-ASSET-REVIEW-FORM-001","target_path":"assets/img/technical-review/review-form-preview.webp"},
+    {"placeholder_id":"VIS-REVIEW-INPUTS-001","section":"Required inputs","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-REVIEW-INPUTS-001","target_path":"assets/img/technical-review/review-inputs.webp"},
+    {"placeholder_id":"VIS-REVIEW-BACKEND-001","section":"Backend status","status":"STRUCTURE_ONLY_PENDING_BACKEND_ACTIVATION","manual_asset_tag":"MANUAL-ASSET-REVIEW-BACKEND-001","target_path":"assets/img/technical-review/review-backend-status.webp"},
+    {"placeholder_id":"VIS-REVIEW-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-REVIEW-FAQ-001","target_path":"assets/img/technical-review/review-faq.webp"}
+  ]
+}
