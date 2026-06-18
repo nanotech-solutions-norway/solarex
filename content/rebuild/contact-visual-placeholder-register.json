@@ -1,0 +1,24 @@
+{
+  "generated": "2026-06-18 Europe/Oslo",
+  "route": "/contact/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "Future_Website_Creation_Playbook_Blueprint_1507_13062026.docx",
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment folder",
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment.pptx",
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment.pdf",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review folder",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies folder",
+    "SolarEX SEO/AEO/GEO implementation reports",
+    "Current user correction: public email info@solarex.no"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-CONTACT-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-CONTACT-HERO-001","target_path":"assets/img/contact/contact-hero-routing.webp"},
+    {"placeholder_id":"VIS-CONTACT-PRINCIPLE-001","section":"Contact principle","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CONTACT-PRINCIPLE-001","target_path":"assets/img/contact/contact-principle.webp"},
+    {"placeholder_id":"VIS-CONTACT-ROUTES-001","section":"Contact routes","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CONTACT-ROUTES-001","target_path":"assets/img/contact/contact-routes.webp"},
+    {"placeholder_id":"VIS-CONTACT-FORM-001","section":"Form preview","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CONTACT-FORM-001","target_path":"assets/img/contact/contact-form-preview.webp"},
+    {"placeholder_id":"VIS-CONTACT-INPUTS-001","section":"Useful information","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CONTACT-INPUTS-001","target_path":"assets/img/contact/contact-inputs.webp"},
+    {"placeholder_id":"VIS-CONTACT-BACKEND-001","section":"Backend status","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CONTACT-BACKEND-001","target_path":"assets/img/contact/contact-backend-status.webp"},
+    {"placeholder_id":"VIS-CONTACT-FAQ-001","section":"FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-CONTACT-FAQ-001","target_path":"assets/img/contact/contact-faq.webp"}
+  ]
+}
