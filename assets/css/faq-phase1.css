@@ -1,0 +1,155 @@
+/* SolarEX FAQ page phase 1 - structure, content and placeholders only. */
+body.faq-page {
+  margin: 0;
+  color: var(--rx-text, #f4f7fb);
+  background: radial-gradient(circle at 72% 10%, rgba(97,199,255,0.16), transparent 25rem), #06101d;
+  font-family: Georgia, 'Libre Baskerville', serif;
+}
+
+.faq-page .faq-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--rx-line);
+}
+
+.faq-page .faq-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(2,8,16,0.96), rgba(8,22,39,0.88) 52%, rgba(8,22,39,0.36));
+}
+
+.faq-page .faq-hero-visual {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(97,199,255,0.22), transparent 22rem), repeating-linear-gradient(115deg, rgba(97,199,255,0.06) 0 2px, transparent 2px 38px), #071424;
+}
+
+.faq-page .faq-hero-visual::after {
+  content: attr(data-placeholder-id);
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid rgba(215,186,106,0.38);
+  border-radius: 999px;
+  background: rgba(6,16,29,0.72);
+  color: rgba(240,217,139,0.88);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.faq-page .faq-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: 6rem 0 5rem;
+}
+
+.faq-page .faq-hero-panel,
+.faq-page .faq-card,
+.faq-page .faq-route-card,
+.faq-page .faq-group,
+.faq-page details {
+  background: var(--rx-card, rgba(13, 29, 49, 0.88));
+  border: 1px solid var(--rx-line, rgba(124, 200, 255, 0.18));
+  border-radius: var(--rx-radius, 22px);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.16);
+}
+
+.faq-page .faq-hero-panel { display: grid; gap: 0.85rem; padding: 1.2rem; }
+.faq-page .faq-hero-panel div { padding-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.faq-page .faq-hero-panel div:last-child { border-bottom: 0; padding-bottom: 0; }
+
+.faq-page .faq-badge,
+.faq-page .faq-hero-panel span {
+  color: var(--rx-blue, #61c7ff);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+.faq-page .faq-card-grid,
+.faq-page .faq-route-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.faq-page .faq-card,
+.faq-page .faq-route-card { padding: 1.2rem; }
+
+.faq-page .faq-group { padding: clamp(1rem, 2vw, 1.35rem); }
+.faq-page .faq-group + .faq-group { margin-top: 1rem; }
+.faq-page .faq-group h3 { margin-top: 0; }
+
+.faq-page details { padding: 0; overflow: hidden; box-shadow: none; }
+.faq-page details + details { margin-top: 0.72rem; }
+.faq-page summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  color: #f7fbff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 800;
+}
+.faq-page summary::-webkit-details-marker { display: none; }
+.faq-page summary::after { content: '+'; color: var(--rx-blue, #61c7ff); font-weight: 900; }
+.faq-page details[open] summary::after { content: '–'; }
+.faq-page details p { margin: 0; padding: 0 1.15rem 1.15rem; }
+
+.faq-page .faq-final-route {
+  background: radial-gradient(circle at 75% 25%, rgba(14,165,233,0.22), transparent 28rem), #06101d;
+  border-top: 1px solid var(--rx-line);
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+@media (max-width: 1060px) {
+  .faq-page .faq-hero-grid,
+  .faq-page .faq-card-grid,
+  .faq-page .faq-route-grid,
+  .faq-page .rx-two-col,
+  .faq-page .rx-final-grid { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 761px) {
+  .faq-page .faq-hero-visual.visual-placeholder::after,
+  .faq-page .faq-hero-visual .rx-manual-asset-tag { display: none !important; }
+}
+
+@media (max-width: 760px) {
+  .faq-page .faq-hero { min-height: auto; }
+  .faq-page .faq-hero-grid { padding: 2.65rem 0 3.15rem; gap: 1.15rem; }
+  .faq-page h1 { font-size: clamp(2rem, 9.4vw, 2.85rem) !important; line-height: 1.02 !important; max-width: 12ch !important; }
+  .faq-page h2 { font-size: clamp(1.75rem, 8vw, 2.35rem) !important; line-height: 1.04 !important; }
+  .faq-page .rx-lead { font-size: 0.92rem !important; line-height: 1.5 !important; }
+  .faq-page .faq-hero-panel,
+  .faq-page .faq-card,
+  .faq-page .faq-route-card,
+  .faq-page .faq-group { padding: 0.9rem !important; border-radius: 14px !important; }
+  .faq-page .rx-actions,
+  .faq-page .rx-final-actions { display: grid !important; grid-template-columns: 1fr !important; gap: 10px !important; }
+  .faq-page .rx-actions .rx-btn,
+  .faq-page .rx-final-actions .rx-btn { width: 100% !important; min-height: 44px !important; justify-content: center !important; }
+  .faq-page details { border-radius: 12px !important; }
+  .faq-page summary { min-height: 50px; padding: 0.85rem 0.9rem; font-size: 0.92rem; }
+  .faq-page details p { padding: 0 0.9rem 0.95rem; font-size: 0.9rem; line-height: 1.55; }
+  .faq-page .faq-final-route { padding: 2.65rem 0 !important; }
+}
