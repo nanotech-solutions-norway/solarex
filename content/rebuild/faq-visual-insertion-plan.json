@@ -1,0 +1,25 @@
+{
+  "generated": "2026-06-18 Europe/Oslo",
+  "route": "/faq/",
+  "status": "VISUAL_INSERTION_PLANNED_WITH_MANUAL_ASSET_TAGS",
+  "binary_asset_connector_status": "PENDING_MANUAL_UPLOAD",
+  "note": "Final binary visual assets are not inserted through the current text-file connector. Existing placeholders are retained and mapped to manual insertion tags.",
+  "source_authority": [
+    "SolarEX-FAQ-or-Quartz-vs-Titan-Solar-Coating-Questions folder",
+    "SolarEX-FAQ-or-Quartz-vs-Titan-Solar-Coating-Questions.pptx",
+    "SolarEX-FAQ-or-Quartz-vs-Titan-Solar-Coating-Questions.pdf",
+    "SolarEX-Technology-or-SolarEX-Quartz-and-Titan folder",
+    "SolarEX Quartz Edition - Application Instructions v2.7",
+    "SolarEX Titan Edition - Application Instructions v2.8"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-FAQ-HERO-001","manual_asset_tag":"MANUAL-ASSET-FAQ-HERO-001","target_path":"assets/img/faq/faq-hero-questions.webp","status":"PENDING_BINARY_UPLOAD"},
+    {"placeholder_id":"VIS-FAQ-PRINCIPLE-001","manual_asset_tag":"MANUAL-ASSET-FAQ-PRINCIPLE-001","target_path":"assets/img/faq/faq-principle.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-FAQ-QUICK-ANSWERS-001","manual_asset_tag":"MANUAL-ASSET-FAQ-QUICK-ANSWERS-001","target_path":"assets/img/faq/faq-quick-answers.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-FAQ-QUARTZ-001","manual_asset_tag":"MANUAL-ASSET-FAQ-QUARTZ-001","target_path":"assets/img/faq/faq-quartz.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-FAQ-TITAN-001","manual_asset_tag":"MANUAL-ASSET-FAQ-TITAN-001","target_path":"assets/img/faq/faq-titan.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-FAQ-EVIDENCE-001","manual_asset_tag":"MANUAL-ASSET-FAQ-EVIDENCE-001","target_path":"assets/img/faq/faq-evidence.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-FAQ-APPLICATION-001","manual_asset_tag":"MANUAL-ASSET-FAQ-APPLICATION-001","target_path":"assets/img/faq/faq-application.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-FAQ-COMMERCIAL-001","manual_asset_tag":"MANUAL-ASSET-FAQ-COMMERCIAL-001","target_path":"assets/img/faq/faq-commercial.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"}
+  ]
+}
