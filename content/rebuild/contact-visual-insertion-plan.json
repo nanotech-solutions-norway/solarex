@@ -1,0 +1,23 @@
+{
+  "generated": "2026-06-19 Europe/Oslo",
+  "route": "/contact/",
+  "status": "VISUAL_INSERTION_PLANNED_WITH_MANUAL_ASSET_TAGS",
+  "binary_asset_connector_status": "PENDING_MANUAL_UPLOAD",
+  "source_authority": [
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment folder",
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment.pptx",
+    "Contact-SolarEX-or-Technical-Review-and-Pilot-Assessment.pdf",
+    "SolarEX-Projects-or-Coating-Evidence-and-Pilot-Review folder",
+    "SolarEX-Documentation-or-Technical-Files-and-Studies folder"
+  ],
+  "public_email": "info@solarex.no",
+  "placeholders": [
+    {"placeholder_id":"VIS-CONTACT-HERO-001","manual_asset_tag":"MANUAL-ASSET-CONTACT-HERO-001","target_path":"assets/img/contact/contact-hero-routing.webp","status":"PENDING_BINARY_UPLOAD"},
+    {"placeholder_id":"VIS-CONTACT-PRINCIPLE-001","manual_asset_tag":"MANUAL-ASSET-CONTACT-PRINCIPLE-001","target_path":"assets/img/contact/contact-principle.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CONTACT-ROUTES-001","manual_asset_tag":"MANUAL-ASSET-CONTACT-ROUTES-001","target_path":"assets/img/contact/contact-routes.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CONTACT-FORM-001","manual_asset_tag":"MANUAL-ASSET-CONTACT-FORM-001","target_path":"assets/img/contact/contact-form-preview.webp","status":"PENDING_BACKEND_ACTIVATION_AND_BINARY_UPLOAD"},
+    {"placeholder_id":"VIS-CONTACT-INFO-001","manual_asset_tag":"MANUAL-ASSET-CONTACT-INFO-001","target_path":"assets/img/contact/contact-info.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"},
+    {"placeholder_id":"VIS-CONTACT-BACKEND-001","manual_asset_tag":"MANUAL-ASSET-CONTACT-BACKEND-001","target_path":"assets/img/contact/contact-backend-status.webp","status":"PENDING_SQL_BACKEND_ACTIVATION"},
+    {"placeholder_id":"VIS-CONTACT-FAQ-001","manual_asset_tag":"MANUAL-ASSET-CONTACT-FAQ-001","target_path":"assets/img/contact/contact-faq.webp","status":"PENDING_BINARY_UPLOAD_OR_LAYOUT_RECREATION"}
+  ]
+}
