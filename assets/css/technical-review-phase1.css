@@ -1,0 +1,198 @@
+/* SolarEX Technical Review page phase 1 - structure, content and visual placeholders only. */
+body.technical-review-page {
+  margin: 0;
+  color: var(--rx-text, #f4f7fb);
+  background: radial-gradient(circle at 72% 10%, rgba(97,199,255,0.16), transparent 25rem), #06101d;
+  font-family: Georgia, 'Libre Baskerville', serif;
+}
+
+.technical-review-page .review-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 660px;
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--rx-line);
+}
+
+.technical-review-page .review-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(2,8,16,0.96), rgba(8,22,39,0.88) 52%, rgba(8,22,39,0.36));
+}
+
+.technical-review-page .review-hero-visual {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(97,199,255,0.20), transparent 22rem), repeating-linear-gradient(115deg, rgba(97,199,255,0.05) 0 2px, transparent 2px 38px), #071424;
+}
+
+.technical-review-page .review-hero-visual > * { display: none !important; }
+
+.technical-review-page .review-hero-visual::after {
+  content: attr(data-placeholder-id);
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid rgba(215,186,106,0.38);
+  border-radius: 999px;
+  background: rgba(6,16,29,0.72);
+  color: rgba(240,217,139,0.88);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.technical-review-page .review-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 410px;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: 6.5rem 0 5rem;
+}
+
+.technical-review-page .review-hero-panel,
+.technical-review-page .review-card,
+.technical-review-page .review-route-card,
+.technical-review-page .review-process article,
+.technical-review-page .review-faq-card,
+.technical-review-page .review-form-panel {
+  background: var(--rx-card, rgba(13, 29, 49, 0.88));
+  border: 1px solid var(--rx-line, rgba(124, 200, 255, 0.18));
+  border-radius: var(--rx-radius, 22px);
+  padding: 1.2rem;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.16);
+}
+
+.technical-review-page .review-hero-panel { display: grid; gap: 0.85rem; }
+.technical-review-page .review-hero-panel div { padding-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.technical-review-page .review-hero-panel div:last-child { border-bottom: 0; padding-bottom: 0; }
+
+.technical-review-page .review-badge,
+.technical-review-page .review-number,
+.technical-review-page .review-hero-panel span {
+  color: var(--rx-blue, #61c7ff);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+.technical-review-page .review-card-grid,
+.technical-review-page .review-faq-grid,
+.technical-review-page .review-doc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.technical-review-page .review-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+}
+
+.technical-review-page .review-process {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.technical-review-page .review-form-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.technical-review-page .review-form-panel form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.technical-review-page .review-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.technical-review-page .review-field label,
+.technical-review-page .review-checkbox label {
+  color: #dcebf8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.technical-review-page .review-field input,
+.technical-review-page .review-field select,
+.technical-review-page .review-field textarea {
+  width: 100%;
+  border: 1px solid rgba(124, 200, 255, 0.24);
+  border-radius: 14px;
+  background: rgba(5, 15, 28, 0.78);
+  color: #f7fbff;
+  min-height: 46px;
+  padding: 0.72rem 0.85rem;
+  font: 500 0.95rem/1.4 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.technical-review-page .review-field textarea { min-height: 120px; resize: vertical; }
+.technical-review-page .review-form-note { color: rgba(220,235,248,0.75); font-size: 0.86rem; line-height: 1.5; }
+
+.technical-review-page .review-checkbox {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 0.55rem;
+  align-items: start;
+  color: rgba(220,235,248,0.82);
+}
+
+.technical-review-page .review-checkbox input { margin-top: 0.2rem; }
+
+.technical-review-page .review-final-route {
+  background: radial-gradient(circle at 75% 25%, rgba(14,165,233,0.22), transparent 28rem), #06101d;
+  border-top: 1px solid var(--rx-line);
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+@media (min-width: 761px) {
+  .technical-review-page .review-hero-visual.visual-placeholder::after,
+  .technical-review-page .review-hero-visual .rx-manual-asset-tag { display: none !important; content: '' !important; }
+}
+
+@media (max-width: 1060px) {
+  .technical-review-page .review-hero-grid,
+  .technical-review-page .review-two,
+  .technical-review-page .review-card-grid,
+  .technical-review-page .review-faq-grid,
+  .technical-review-page .review-doc-grid,
+  .technical-review-page .review-process,
+  .technical-review-page .review-form-shell { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .technical-review-page .review-hero { min-height: auto; }
+  .technical-review-page .review-hero-visual::after { right: 0.75rem; bottom: 0.75rem; font-size: 0.52rem; opacity: 0.78; }
+  .technical-review-page .review-hero-grid { padding: 2.65rem 0 3.15rem; gap: 1.15rem; }
+  .technical-review-page h1 { font-size: clamp(1.95rem, 9.4vw, 2.78rem) !important; line-height: 1.02 !important; max-width: 12.5ch !important; }
+  .technical-review-page .rx-lead { font-size: 0.9rem !important; line-height: 1.5 !important; }
+  .technical-review-page .rx-actions,
+  .technical-review-page .rx-final-actions { display: grid !important; grid-template-columns: 1fr !important; gap: 0.65rem !important; }
+  .technical-review-page .rx-actions .rx-btn,
+  .technical-review-page .rx-final-actions .rx-btn { width: 100% !important; min-height: 44px !important; justify-content: center !important; }
+  .technical-review-page .review-card,
+  .technical-review-page .review-route-card,
+  .technical-review-page .review-process article,
+  .technical-review-page .review-faq-card,
+  .technical-review-page .review-form-panel,
+  .technical-review-page .review-hero-panel { padding: 0.88rem !important; border-radius: 14px !important; }
+  .technical-review-page .review-final-route { padding: 2.65rem 0 !important; }
+}
