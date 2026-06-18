@@ -1,0 +1,23 @@
+{
+  "generated": "2026-06-18 Europe/Oslo",
+  "route": "/faq/",
+  "status": "STRUCTURE_PLACEHOLDERS_COMPLETE",
+  "source_authority": [
+    "SolarEX-FAQ-or-Quartz-vs-Titan-Solar-Coating-Questions folder",
+    "SolarEX-FAQ-or-Quartz-vs-Titan-Solar-Coating-Questions.pptx",
+    "SolarEX-FAQ-or-Quartz-vs-Titan-Solar-Coating-Questions.pdf",
+    "SolarEX-Technology-or-SolarEX-Quartz-and-Titan source files",
+    "SolarEX Quartz Edition - Application Instructions",
+    "SolarEX Titan Edition - Application Instructions"
+  ],
+  "placeholders": [
+    {"placeholder_id":"VIS-FAQ-HERO-001","section":"Hero","status":"PENDING_VISUAL_INSERTION","manual_asset_tag":"MANUAL-ASSET-FAQ-HERO-001","target_path":"assets/img/faq/faq-hero-quartz-titan.webp"},
+    {"placeholder_id":"VIS-FAQ-PRINCIPLE-001","section":"FAQ principle","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-FAQ-PRINCIPLE-001","target_path":"assets/img/faq/faq-principle.webp"},
+    {"placeholder_id":"VIS-FAQ-QUICK-ANSWERS-001","section":"Quick answers","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-FAQ-QUICK-ANSWERS-001","target_path":"assets/img/faq/faq-quick-answers.webp"},
+    {"placeholder_id":"VIS-FAQ-QUARTZ-001","section":"Quartz FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-FAQ-QUARTZ-001","target_path":"assets/img/faq/faq-quartz.webp"},
+    {"placeholder_id":"VIS-FAQ-TITAN-001","section":"Titan FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-FAQ-TITAN-001","target_path":"assets/img/faq/faq-titan.webp"},
+    {"placeholder_id":"VIS-FAQ-EVIDENCE-001","section":"Evidence FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-FAQ-EVIDENCE-001","target_path":"assets/img/faq/faq-evidence.webp"},
+    {"placeholder_id":"VIS-FAQ-APPLICATION-001","section":"Application FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-FAQ-APPLICATION-001","target_path":"assets/img/faq/faq-application.webp"},
+    {"placeholder_id":"VIS-FAQ-COMMERCIAL-001","section":"Commercial FAQ","status":"STRUCTURE_ONLY","manual_asset_tag":"MANUAL-ASSET-FAQ-COMMERCIAL-001","target_path":"assets/img/faq/faq-commercial.webp"}
+  ]
+}
