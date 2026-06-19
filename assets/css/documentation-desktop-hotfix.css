@@ -1,4 +1,5 @@
 @import url('/assets/css/documentation-visual-refinement.css');
+@import url('/assets/css/documentation-mobile-refinement.css');
 
 /* Documentation desktop validation hotfix - scoped pilot correction only.
    Purpose: remove the oversized right-side hero placeholder capsule seen in desktop review screenshots
