@@ -1,0 +1,65 @@
+{
+  "route": "/applications/desert-and-dust/",
+  "generated": "01:20, 20.06.2026 Europe/Oslo",
+  "status": "PLANNED_PLACEHOLDERS_NO_BINARY_VISUALS_INSERTED",
+  "classification": "PUBLIC_APPROVED_STRUCTURE_PENDING_VISUAL_REVIEW",
+  "placeholders": [
+    {
+      "placeholder_id": "VIS-DESERT-HERO-001",
+      "section": "Hero",
+      "role": "Desert and dust PV glass visual",
+      "required_visual": "PV modules in dry dusty/desert operating environment with technical SolarEX overlay",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/desert-dust-hero.webp",
+      "alt_text": "SolarEX desert and dust PV glass application route",
+      "fallback": "Dark technical placeholder with VIS-DESERT-HERO-001 tag"
+    },
+    {
+      "placeholder_id": "VIS-DESERT-PRINCIPLE-001",
+      "section": "Desert route principle",
+      "role": "Dust route decision graphic",
+      "required_visual": "Three-part graphic for soiling, operations and Quartz-first review",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/desert-dust-principle.webp",
+      "alt_text": "SolarEX desert route principle for dust soiling operations and Quartz first review",
+      "fallback": "Card-grid placeholder"
+    },
+    {
+      "placeholder_id": "VIS-DESERT-FACTORS-001",
+      "section": "Review factors",
+      "role": "Desert review factor grid",
+      "required_visual": "Card-grid visual for particle type, cleaning model, asset profile and pilot objective",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/desert-dust-factors.webp",
+      "alt_text": "SolarEX desert and dust review factors for PV glass",
+      "fallback": "Structured factor card grid"
+    },
+    {
+      "placeholder_id": "VIS-DESERT-PATHWAY-001",
+      "section": "Pathway selection",
+      "role": "Quartz/Titan pathway decision visual",
+      "required_visual": "Side-by-side route visual for Quartz SiO₂ first review and Titan TiO₂ conditional review",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/desert-dust-pathway.webp",
+      "alt_text": "SolarEX desert dust pathway selection for Quartz SiO₂ and Titan TiO₂",
+      "fallback": "Two-card pathway block"
+    },
+    {
+      "placeholder_id": "VIS-DESERT-PILOT-001",
+      "section": "Pilot framing",
+      "role": "Treated/control pilot logic visual",
+      "required_visual": "Before/during pilot visual showing treated and control area logic",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/desert-dust-pilot.webp",
+      "alt_text": "SolarEX desert dust pilot framing for treated and control PV glass areas",
+      "fallback": "Two-card pilot block"
+    }
+  ],
+  "safety_notes": [
+    "No binary visual files inserted.",
+    "No backend or SQL activation performed.",
+    "No universal performance guarantees included.",
+    "Quartz SiO₂ is framed as the first review route for dry mineral soiling, not as a guaranteed universal dust solution.",
+    "Titan TiO₂ is included only as conditional active UV-dependent review."
+  ]
+}
