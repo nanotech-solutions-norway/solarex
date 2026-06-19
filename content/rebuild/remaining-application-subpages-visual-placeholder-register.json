@@ -1,0 +1,154 @@
+{
+  "routes": [
+    "/applications/coastal-and-salt/",
+    "/applications/commercial-rooftop/",
+    "/applications/utility-scale/"
+  ],
+  "generated": "01:42, 20.06.2026 Europe/Oslo",
+  "status": "PLANNED_PLACEHOLDERS_NO_BINARY_VISUALS_INSERTED",
+  "classification": "PUBLIC_APPROVED_STRUCTURE_PENDING_VISUAL_REVIEW",
+  "placeholders": [
+    {
+      "placeholder_id": "VIS-COASTAL-HERO-001",
+      "route": "/applications/coastal-and-salt/",
+      "section": "Hero",
+      "required_visual": "Coastal PV glass environment with salt/humidity route overlay",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/coastal-salt-hero.webp",
+      "alt_text": "SolarEX coastal and salt PV glass application route"
+    },
+    {
+      "placeholder_id": "VIS-COASTAL-PRINCIPLE-001",
+      "route": "/applications/coastal-and-salt/",
+      "section": "Coastal route principle",
+      "required_visual": "Three-part salt/humidity/mixed-contamination route graphic",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/coastal-salt-principle.webp",
+      "alt_text": "SolarEX coastal salt route principle for PV glass"
+    },
+    {
+      "placeholder_id": "VIS-COASTAL-FACTORS-001",
+      "route": "/applications/coastal-and-salt/",
+      "section": "Review factors",
+      "required_visual": "Coastal review factor card visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/coastal-salt-factors.webp",
+      "alt_text": "SolarEX coastal salt review factors for PV glass"
+    },
+    {
+      "placeholder_id": "VIS-COASTAL-PATHWAY-001",
+      "route": "/applications/coastal-and-salt/",
+      "section": "Pathway selection",
+      "required_visual": "Quartz SiO₂ and Titan TiO₂ coastal pathway decision visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/coastal-salt-pathway.webp",
+      "alt_text": "SolarEX coastal salt pathway selection for Quartz SiO₂ and Titan TiO₂"
+    },
+    {
+      "placeholder_id": "VIS-COASTAL-PILOT-001",
+      "route": "/applications/coastal-and-salt/",
+      "section": "Pilot framing",
+      "required_visual": "Coastal treated/control pilot setup visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/coastal-salt-pilot.webp",
+      "alt_text": "SolarEX coastal salt pilot framing for treated and control PV glass areas"
+    },
+    {
+      "placeholder_id": "VIS-ROOFTOP-HERO-001",
+      "route": "/applications/commercial-rooftop/",
+      "section": "Hero",
+      "required_visual": "Commercial rooftop PV glass environment with access and cleaning-route overlay",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/commercial-rooftop-hero.webp",
+      "alt_text": "SolarEX commercial rooftop PV glass application route"
+    },
+    {
+      "placeholder_id": "VIS-ROOFTOP-PRINCIPLE-001",
+      "route": "/applications/commercial-rooftop/",
+      "section": "Rooftop route principle",
+      "required_visual": "Three-part access, contamination and ROI route graphic",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/commercial-rooftop-principle.webp",
+      "alt_text": "SolarEX commercial rooftop route principle for PV glass"
+    },
+    {
+      "placeholder_id": "VIS-ROOFTOP-FACTORS-001",
+      "route": "/applications/commercial-rooftop/",
+      "section": "Review factors",
+      "required_visual": "Commercial rooftop review factor card visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/commercial-rooftop-factors.webp",
+      "alt_text": "SolarEX commercial rooftop review factors for PV glass"
+    },
+    {
+      "placeholder_id": "VIS-ROOFTOP-PATHWAY-001",
+      "route": "/applications/commercial-rooftop/",
+      "section": "Pathway selection",
+      "required_visual": "Quartz SiO₂ and Titan TiO₂ rooftop pathway decision visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/commercial-rooftop-pathway.webp",
+      "alt_text": "SolarEX commercial rooftop pathway selection for Quartz SiO₂ and Titan TiO₂"
+    },
+    {
+      "placeholder_id": "VIS-ROOFTOP-PILOT-001",
+      "route": "/applications/commercial-rooftop/",
+      "section": "Pilot framing",
+      "required_visual": "Commercial rooftop treated/control and ROI pilot setup visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/commercial-rooftop-pilot.webp",
+      "alt_text": "SolarEX commercial rooftop pilot framing for treated and control PV glass areas"
+    },
+    {
+      "placeholder_id": "VIS-UTILITY-HERO-001",
+      "route": "/applications/utility-scale/",
+      "section": "Hero",
+      "required_visual": "Utility-scale PV plant route visual with pilot and O&M planning overlay",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/utility-scale-hero.webp",
+      "alt_text": "SolarEX utility-scale PV glass application route"
+    },
+    {
+      "placeholder_id": "VIS-UTILITY-PRINCIPLE-001",
+      "route": "/applications/utility-scale/",
+      "section": "Utility-scale route principle",
+      "required_visual": "Three-part scale, evidence and route-control graphic",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/utility-scale-principle.webp",
+      "alt_text": "SolarEX utility-scale route principle for PV glass"
+    },
+    {
+      "placeholder_id": "VIS-UTILITY-FACTORS-001",
+      "route": "/applications/utility-scale/",
+      "section": "Review factors",
+      "required_visual": "Utility-scale review factor card visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/utility-scale-factors.webp",
+      "alt_text": "SolarEX utility-scale review factors for PV glass"
+    },
+    {
+      "placeholder_id": "VIS-UTILITY-PATHWAY-001",
+      "route": "/applications/utility-scale/",
+      "section": "Pathway selection",
+      "required_visual": "Quartz SiO₂ and Titan TiO₂ utility-scale pathway decision visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/utility-scale-pathway.webp",
+      "alt_text": "SolarEX utility-scale pathway selection for Quartz SiO₂ and Titan TiO₂"
+    },
+    {
+      "placeholder_id": "VIS-UTILITY-PILOT-001",
+      "route": "/applications/utility-scale/",
+      "section": "Pilot framing",
+      "required_visual": "Utility-scale treated/control pilot and scale-up decision visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/utility-scale-pilot.webp",
+      "alt_text": "SolarEX utility-scale pilot framing for treated and control PV glass areas"
+    }
+  ],
+  "safety_notes": [
+    "No binary visual files inserted.",
+    "No backend or SQL activation performed.",
+    "No universal performance guarantees included.",
+    "Quartz SiO₂ and Titan TiO₂ route separation is preserved.",
+    "CTA click confirmation and desktop validation remain pending."
+  ]
+}
