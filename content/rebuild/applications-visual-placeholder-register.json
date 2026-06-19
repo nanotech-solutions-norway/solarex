@@ -1,0 +1,65 @@
+{
+  "route": "/applications/",
+  "generated": "08:24, 19.06.2026 Europe/Oslo",
+  "status": "PLANNED_PLACEHOLDERS_NO_BINARY_VISUALS_INSERTED",
+  "classification": "PUBLIC_APPROVED_STRUCTURE_PENDING_VISUAL_REVIEW",
+  "placeholders": [
+    {
+      "placeholder_id": "VIS-APPLICATIONS-HERO-001",
+      "section": "Hero",
+      "role": "Applications hero visual",
+      "required_visual": "PV glass operating environment visual showing route selection by contamination and site conditions",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/applications-hero.webp",
+      "alt_text": "SolarEX PV glass application routes for operating environment and contamination profile",
+      "fallback": "Dark technical placeholder with VIS-APPLICATIONS-HERO-001 tag"
+    },
+    {
+      "placeholder_id": "VIS-APPLICATIONS-PRINCIPLE-001",
+      "section": "Application principle",
+      "role": "Surface condition decision graphic",
+      "required_visual": "Three-part graphic for environment, mechanism and operations",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/applications-principle.webp",
+      "alt_text": "SolarEX application principle based on environment mechanism and operations",
+      "fallback": "Card-grid placeholder"
+    },
+    {
+      "placeholder_id": "VIS-APPLICATIONS-ROUTES-001",
+      "section": "Application routes",
+      "role": "Application route cards",
+      "required_visual": "Four route-card visual for desert and dust, coastal and salt, commercial rooftop and utility-scale PV",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/applications-routes.webp",
+      "alt_text": "SolarEX application routes for desert dust coastal salt commercial rooftop and utility scale PV",
+      "fallback": "Structured route card grid"
+    },
+    {
+      "placeholder_id": "VIS-APPLICATIONS-ROUTE-SELECTION-001",
+      "section": "Route selection",
+      "role": "Quartz/Titan selection visual",
+      "required_visual": "Side-by-side mechanism fit visual for Quartz SiO₂ and Titan TiO₂",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/applications-route-selection.webp",
+      "alt_text": "SolarEX route selection for Quartz SiO₂ and Titan TiO₂",
+      "fallback": "Two-card product route block"
+    },
+    {
+      "placeholder_id": "VIS-APPLICATIONS-FACTORS-001",
+      "section": "Operating factors",
+      "role": "Operating factor card system",
+      "required_visual": "Card-grid visual for soiling, climate, cleaning, asset profile, evidence and decision stage",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/applications/applications-factors.webp",
+      "alt_text": "SolarEX operating factors for application review",
+      "fallback": "Structured factor card grid"
+    }
+  ],
+  "safety_notes": [
+    "No binary visual files inserted.",
+    "No backend or SQL activation performed.",
+    "No universal performance guarantees included.",
+    "Quartz SiO₂ and Titan TiO₂ routes are kept separate.",
+    "Application subpages remain staged for later build-out."
+  ]
+}
