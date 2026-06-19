@@ -1,0 +1,276 @@
+/* SolarEX Partners page phase 1 - structure, content and visual placeholders only. */
+body.partners-page {
+  margin: 0;
+  color: var(--rx-text, #f4f7fb);
+  background: radial-gradient(circle at 78% 10%, rgba(97,199,255,0.16), transparent 25rem), #06101d;
+  font-family: Georgia, 'Libre Baskerville', serif;
+}
+
+.partners-page .partners-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 680px;
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--rx-line);
+}
+
+.partners-page .partners-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(2,8,16,0.97), rgba(8,22,39,0.90) 52%, rgba(8,22,39,0.38));
+}
+
+.partners-page .partners-hero-visual {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 74% 28%, rgba(97,199,255,0.24), transparent 23rem), repeating-linear-gradient(115deg, rgba(97,199,255,0.06) 0 2px, transparent 2px 38px), linear-gradient(135deg, rgba(8,22,39,0.96), rgba(6,16,29,0.98));
+}
+
+.partners-page .partners-hero-visual > * { display: none !important; }
+
+.partners-page .partners-hero-visual::after {
+  content: attr(data-placeholder-id);
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid rgba(215,186,106,0.38);
+  border-radius: 999px;
+  background: rgba(6,16,29,0.72);
+  color: rgba(240,217,139,0.88);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.partners-page .partners-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 420px;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: 6.4rem 0 5.2rem;
+}
+
+.partners-page .partners-hero-panel,
+.partners-page .partners-card,
+.partners-page .partners-route-card,
+.partners-page .partners-form-card,
+.partners-page .partners-faq-card,
+.partners-page .partners-status-card {
+  background: var(--rx-card, rgba(13, 29, 49, 0.88));
+  border: 1px solid var(--rx-line, rgba(124, 200, 255, 0.18));
+  border-radius: var(--rx-radius, 22px);
+  padding: 1.2rem;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.16);
+}
+
+.partners-page .partners-hero-panel { display: grid; gap: 0.85rem; }
+.partners-page .partners-hero-panel div { padding-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.partners-page .partners-hero-panel div:last-child { border-bottom: 0; padding-bottom: 0; }
+
+.partners-page .partners-badge,
+.partners-page .partners-number,
+.partners-page .partners-hero-panel span {
+  color: var(--rx-blue, #61c7ff);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+.partners-page .partners-card-grid,
+.partners-page .partners-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.partners-page #partner-fit .partners-card-grid,
+.partners-page #partner-commercial-model .partners-card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.partners-page .partners-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+}
+
+.partners-page .partners-process {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.partners-page .partners-process article {
+  background: rgba(13,29,49,0.88);
+  border: 1px solid rgba(124,200,255,0.18);
+  border-radius: 18px;
+  padding: 1.05rem;
+}
+
+.partners-page .partners-form-grid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.partners-page .partners-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.partners-page .partners-form label {
+  display: grid;
+  gap: 0.34rem;
+  color: rgba(244,247,251,0.86);
+  font: 700 0.78rem/1.2 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.partners-page .partners-form input,
+.partners-page .partners-form select,
+.partners-page .partners-form textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid rgba(124, 200, 255, 0.18);
+  border-radius: 12px;
+  background: rgba(4,12,23,0.78);
+  color: #f7fbff;
+  padding: 0.78rem 0.9rem;
+  font: 500 0.9rem/1.4 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.partners-page .partners-form textarea {
+  min-height: 135px;
+  resize: vertical;
+}
+
+.partners-page .partners-form .partners-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.partners-page .partners-form input[type='checkbox'] {
+  width: auto;
+  min-height: 0;
+  margin-top: 0.2rem;
+}
+
+.partners-page .partners-list {
+  display: grid;
+  gap: 0.66rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partners-page .partners-list li {
+  padding: 0.72rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.partners-page .partners-list li:last-child { border-bottom: 0; }
+.partners-page .partners-list strong { color: var(--rx-blue, #61c7ff); }
+
+.partners-page .partners-route-card a,
+.partners-page .partners-status-card a {
+  color: var(--rx-gold, #d7ba6a);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.partners-page .partners-final-route {
+  background: radial-gradient(circle at 75% 25%, rgba(14,165,233,0.22), transparent 28rem), #06101d;
+  border-top: 1px solid var(--rx-line);
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+@media (min-width: 761px) {
+  .partners-page .partners-hero-visual.visual-placeholder {
+    outline: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    pointer-events: none;
+  }
+  .partners-page .partners-hero-visual.visual-placeholder::after,
+  .partners-page .partners-hero-visual .rx-manual-asset-tag {
+    content: '' !important;
+    display: none !important;
+  }
+}
+
+@media (max-width: 1160px) {
+  .partners-page #partner-fit .partners-card-grid,
+  .partners-page #partner-commercial-model .partners-card-grid,
+  .partners-page .partners-process {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1060px) {
+  .partners-page .partners-hero-grid,
+  .partners-page .partners-two,
+  .partners-page .partners-card-grid,
+  .partners-page .partners-faq-grid,
+  .partners-page .partners-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .partners-page .partners-hero { min-height: auto; }
+  .partners-page .partners-hero-visual::after {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    font-size: 0.52rem;
+    opacity: 0.78;
+  }
+  .partners-page .partners-hero-grid {
+    padding: 2.65rem 0 3.15rem;
+    gap: 1.15rem;
+  }
+  .partners-page h1 {
+    font-size: clamp(1.95rem, 9.4vw, 2.78rem) !important;
+    line-height: 1.02 !important;
+    max-width: 12.8ch !important;
+  }
+  .partners-page .rx-lead {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  .partners-page .partners-hero-panel { padding: 0.92rem; border-radius: 14px; }
+  .partners-page .partners-card,
+  .partners-page .partners-route-card,
+  .partners-page .partners-form-card,
+  .partners-page .partners-faq-card,
+  .partners-page .partners-status-card,
+  .partners-page .partners-process article {
+    padding: 0.88rem !important;
+    border-radius: 14px !important;
+  }
+  .partners-page #partner-fit .partners-card-grid,
+  .partners-page #partner-commercial-model .partners-card-grid,
+  .partners-page .partners-process {
+    grid-template-columns: 1fr;
+  }
+  .partners-page .rx-actions,
+  .partners-page .rx-final-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.6rem !important;
+  }
+  .partners-page .rx-btn { width: 100%; justify-content: center; }
+  .partners-page .partners-final-route { padding: 2.65rem 0 !important; }
+}
