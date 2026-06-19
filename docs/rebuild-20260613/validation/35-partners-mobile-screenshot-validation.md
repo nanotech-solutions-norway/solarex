@@ -1,9 +1,10 @@
 # Validation Log - Partners Mobile Screenshot
 
 Generated: 08:14, 19.06.2026 Europe/Oslo
+Updated: 08:18, 19.06.2026 Europe/Oslo
 Route: `/partners/`
 Evidence: `Screenshot_20260619_081248_Chrome.jpg`
-Status: MOBILE_SCREENSHOT_PROVISIONAL_PASS_DESKTOP_PENDING
+Status: MOBILE_AND_CTA_PROVISIONAL_PASS_DESKTOP_PENDING
 
 ## Screenshot scope
 
@@ -16,6 +17,7 @@ The uploaded mobile screenshot is a full-page capture of the `/partners/` route.
 | Header / menu area | PASS | Header appears compact; no visible major horizontal overflow. |
 | Hero | PASS | H1, lead, CTA stack and hero panel are visible in mobile stack. |
 | CTA treatment | PASS | Blue primary CTA and secondary CTAs appear stacked and usable. |
+| CTA functionality | PASS_USER_CONFIRMED | User confirmed CTA is working after mobile review. |
 | Section order | PASS | Page follows expected partner route sequence from hero through partner principle, partner fit, commercial model, product routes, regional enablement, process, kit, inquiry, FAQ and footer. |
 | Cards | PASS | Cards stack vertically on mobile without visible major breakage. |
 | Partner Inquiry preview | PASS | Form preview remains staged/disabled and uses email CTA; no backend activation visible. |
@@ -27,22 +29,22 @@ The uploaded mobile screenshot is a full-page capture of the `/partners/` route.
 ## Decisions
 
 - No immediate CSS or HTML fix is required from the mobile screenshot.
-- Treat `/partners/` mobile as provisionally passed.
+- Treat `/partners/` mobile and CTA functionality as provisionally passed.
 - Keep desktop validation pending.
 - Do not insert binary visuals yet.
 - Do not add a manual visual tag script until desktop/mobile placeholder treatment is reviewed at normal screenshot resolution.
+- Proceed to the next controlled route because the user confirmed CTA functionality and asked to proceed.
 
 ## Safety status
 
-No files were changed except this validation log. No backend, SQL, form endpoint, production release, credential handling, private data, partner exclusivity claim, partner endorsement claim, or binary visual insertion was performed.
+No backend, SQL, form endpoint, production release, credential handling, private data, partner exclusivity claim, partner endorsement claim, or binary visual insertion was performed.
 
 ## Open items
 
 - Desktop screenshot validation remains required.
 - Normal-resolution mobile screenshot or browser-device inspection is recommended before final visual insertion.
-- CTA click validation should still be performed on live GitHub Pages.
 - GitHub Pages deployment/status check remains external/manual if no workflow status is returned.
 
 ## Next step
 
-Proceed with desktop validation when available, or continue to the next controlled route if the user accepts mobile provisional pass.
+Proceed to `/applications/` as the next missing navigation hub route.
