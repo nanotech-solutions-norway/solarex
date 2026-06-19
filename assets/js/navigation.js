@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
   loadScript('projects-visual-insertion-tags.js', 'data-solarex-projects-visual-tags-js');
   loadScript('case-studies-visual-insertion-tags.js', 'data-solarex-case-visual-tags-js');
   loadScript('technical-review-visual-insertion-tags.js', 'data-solarex-review-visual-tags-js');
+  loadScript('faq-visual-insertion-tags.js', 'data-solarex-faq-visual-tags-js');
+  loadScript('contact-visual-insertion-tags.js', 'data-solarex-contact-visual-tags-js');
+  loadScript('documentation-mobile-refinement.js', 'data-solarex-doc-mobile-refinement-js');
 
   const button = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#primary-nav');
