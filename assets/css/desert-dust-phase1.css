@@ -1,0 +1,174 @@
+/* SolarEX Desert and Dust application page phase 1 - structure, content and visual placeholders only. */
+body.desert-dust-page {
+  margin: 0;
+  color: var(--rx-text, #f4f7fb);
+  background: radial-gradient(circle at 74% 10%, rgba(215,186,106,0.18), transparent 25rem), #06101d;
+  font-family: Georgia, 'Libre Baskerville', serif;
+}
+
+.desert-dust-page .desert-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 660px;
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--rx-line);
+}
+
+.desert-dust-page .desert-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(2,8,16,0.97), rgba(8,22,39,0.90) 52%, rgba(8,22,39,0.38));
+}
+
+.desert-dust-page .desert-hero-visual {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 72% 28%, rgba(215,186,106,0.22), transparent 23rem), repeating-linear-gradient(115deg, rgba(215,186,106,0.06) 0 2px, transparent 2px 38px), linear-gradient(135deg, rgba(8,22,39,0.96), rgba(6,16,29,0.98));
+}
+
+.desert-dust-page .desert-hero-visual > * { display: none !important; }
+
+.desert-dust-page .desert-hero-visual::after {
+  content: attr(data-placeholder-id);
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid rgba(215,186,106,0.38);
+  border-radius: 999px;
+  background: rgba(6,16,29,0.72);
+  color: rgba(240,217,139,0.88);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.desert-dust-page .desert-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 410px;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: 6.2rem 0 5rem;
+}
+
+.desert-dust-page .desert-hero-panel,
+.desert-dust-page .desert-card,
+.desert-dust-page .desert-status-card {
+  background: var(--rx-card, rgba(13, 29, 49, 0.88));
+  border: 1px solid var(--rx-line, rgba(124, 200, 255, 0.18));
+  border-radius: var(--rx-radius, 22px);
+  padding: 1.2rem;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.16);
+}
+
+.desert-dust-page .desert-hero-panel { display: grid; gap: 0.85rem; }
+.desert-dust-page .desert-hero-panel div { padding-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.desert-dust-page .desert-hero-panel div:last-child { border-bottom: 0; padding-bottom: 0; }
+
+.desert-dust-page .desert-badge,
+.desert-dust-page .desert-hero-panel span {
+  color: var(--rx-blue, #61c7ff);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+.desert-dust-page .desert-card-grid,
+.desert-dust-page .desert-factor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.desert-dust-page .desert-factor-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.desert-dust-page .desert-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+}
+
+.desert-dust-page .desert-status-card a {
+  color: var(--rx-gold, #d7ba6a);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.desert-dust-page .desert-final-route {
+  background: radial-gradient(circle at 75% 25%, rgba(215,186,106,0.20), transparent 28rem), #06101d;
+  border-top: 1px solid var(--rx-line);
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+@media (min-width: 761px) {
+  .desert-dust-page .desert-hero-visual.visual-placeholder {
+    outline: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    pointer-events: none;
+  }
+  .desert-dust-page .desert-hero-visual.visual-placeholder::after,
+  .desert-dust-page .desert-hero-visual .rx-manual-asset-tag {
+    content: '' !important;
+    display: none !important;
+  }
+}
+
+@media (max-width: 1160px) {
+  .desert-dust-page .desert-factor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 1060px) {
+  .desert-dust-page .desert-hero-grid,
+  .desert-dust-page .desert-two,
+  .desert-dust-page .desert-card-grid,
+  .desert-dust-page .desert-factor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .desert-dust-page .desert-hero { min-height: auto; }
+  .desert-dust-page .desert-hero-visual::after {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    font-size: 0.52rem;
+    opacity: 0.78;
+  }
+  .desert-dust-page .desert-hero-grid {
+    padding: 2.65rem 0 3.15rem;
+    gap: 1.15rem;
+  }
+  .desert-dust-page h1 {
+    font-size: clamp(1.95rem, 9.4vw, 2.78rem) !important;
+    line-height: 1.02 !important;
+    max-width: 12.8ch !important;
+  }
+  .desert-dust-page .rx-lead {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  .desert-dust-page .desert-hero-panel { padding: 0.92rem; border-radius: 14px; }
+  .desert-dust-page .desert-card,
+  .desert-dust-page .desert-status-card {
+    padding: 0.88rem !important;
+    border-radius: 14px !important;
+  }
+  .desert-dust-page .rx-actions,
+  .desert-dust-page .rx-final-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.6rem !important;
+  }
+  .desert-dust-page .rx-btn { width: 100%; justify-content: center; }
+  .desert-dust-page .desert-final-route { padding: 2.65rem 0 !important; }
+}
