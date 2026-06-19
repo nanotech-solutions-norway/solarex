@@ -1,0 +1,115 @@
+{
+  "route": "/partners/",
+  "generated": "03:08, 19.06.2026 Europe/Oslo",
+  "status": "PLANNED_PLACEHOLDERS_NO_BINARY_VISUALS_INSERTED",
+  "classification": "PUBLIC_APPROVED_STRUCTURE_PENDING_VISUAL_REVIEW",
+  "placeholders": [
+    {
+      "placeholder_id": "VIS-PARTNERS-HERO-001",
+      "section": "Hero",
+      "role": "Commercial partner hero visual",
+      "required_visual": "Regional PV partner network / channel-development visual with SolarEX technical-commercial treatment",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/partners/partners-hero-network.webp",
+      "alt_text": "SolarEX partner network visual for regional PV glass surface-engineering distribution and project routing",
+      "fallback": "Dark technical placeholder with VIS-PARTNERS-HERO-001 tag"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-PRINCIPLE-001",
+      "section": "Partner principle",
+      "role": "Quartz/Titan partner messaging separation",
+      "required_visual": "Mechanism-safe partner messaging graphic showing Quartz SiO₂, Titan TiO₂ and technical review routes",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/partners/partners-principle-routes.webp",
+      "alt_text": "SolarEX partner messaging routes separating Quartz SiO₂, Titan TiO₂ and technical review",
+      "fallback": "Card-grid placeholder with manual tag"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-FIT-001",
+      "section": "Partner fit",
+      "role": "Partner segment cards",
+      "required_visual": "Icon/card treatment for distributors, EPCs, O&M providers and solar advisors",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/partners/partners-fit-segments.webp",
+      "alt_text": "SolarEX partner fit segments for distributors EPC installers O&M providers and solar advisors",
+      "fallback": "Structured card grid"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-MODEL-001",
+      "section": "Commercial model",
+      "role": "Controlled channel model visual",
+      "required_visual": "Channel model graphic showing approved messaging, regional enablement, lead routing and pilot validation",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/partners/partners-commercial-model.webp",
+      "alt_text": "SolarEX controlled channel model for approved messaging regional enablement lead routing and pilot validation",
+      "fallback": "Structured card grid"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-PRODUCT-ROUTES-001",
+      "section": "Product routes",
+      "role": "Quartz/Titan route comparison visual",
+      "required_visual": "Side-by-side partner sales route visual for Quartz SiO₂ and Titan TiO₂",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/partners/partners-product-routes.webp",
+      "alt_text": "SolarEX partner product routes for Quartz SiO₂ and Titan TiO₂",
+      "fallback": "Two-card product route block"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-REGIONAL-001",
+      "section": "Regional enablement",
+      "role": "Regional partner opportunity map/cards",
+      "required_visual": "Europe, Middle East/GCC and Nordics regional opportunity visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/partners/partners-regional-enablement.webp",
+      "alt_text": "SolarEX regional partner enablement for Europe Middle East GCC and Nordics",
+      "fallback": "Structured regional card grid"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-PROCESS-001",
+      "section": "Partner process",
+      "role": "Qualification workflow",
+      "required_visual": "Four-step partner qualification workflow graphic",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/partners/partners-process.webp",
+      "alt_text": "SolarEX partner process from regional role definition to pilot pipeline",
+      "fallback": "Four-step process placeholder"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-KIT-001",
+      "section": "Partner kit",
+      "role": "Partner asset package visual",
+      "required_visual": "Partner deck, region pack, claim guide and documentation kit visual",
+      "source_status": "pending_manual_asset",
+      "target_asset": "assets/img/partners/partners-kit.webp",
+      "alt_text": "SolarEX partner kit with partner deck region pack claim guide and documentation controls",
+      "fallback": "Two-card controlled documentation placeholder"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-INQUIRY-001",
+      "section": "Partner Inquiry",
+      "role": "Staged inquiry form visual",
+      "required_visual": "Static partner inquiry form / qualification preview",
+      "source_status": "implemented_as_static_form_preview",
+      "target_asset": "assets/img/partners/partners-inquiry-preview.webp",
+      "alt_text": "SolarEX staged partner inquiry preview for region and channel qualification",
+      "fallback": "Disabled form preview with mailto CTA"
+    },
+    {
+      "placeholder_id": "VIS-PARTNERS-FAQ-001",
+      "section": "Partner FAQ",
+      "role": "Partner FAQ visual/card system",
+      "required_visual": "FAQ section support visual or structured card layout",
+      "source_status": "implemented_as_card_layout",
+      "target_asset": "assets/img/partners/partners-faq.webp",
+      "alt_text": "SolarEX partner FAQ for commercial route claim control and inquiry handling",
+      "fallback": "FAQ card layout"
+    }
+  ],
+  "safety_notes": [
+    "No binary visual files inserted.",
+    "No external stock imagery inserted.",
+    "No partner endorsements or exclusivity claims made.",
+    "No backend form submission activated.",
+    "Public email remains info@solarex.no."
+  ]
+}
