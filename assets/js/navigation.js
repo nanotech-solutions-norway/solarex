@@ -19,6 +19,120 @@
     document.body.appendChild(script);
   };
 
+  const injectMenuCss = () => {
+    if (document.querySelector('#solarex-mobile-menu-force')) return;
+    const style = document.createElement('style');
+    style.id = 'solarex-mobile-menu-force';
+    style.textContent = `
+      @media (max-width: 1060px) {
+        body.rebuild-home.nav-open,
+        html.nav-open body.rebuild-home { overflow: hidden !important; }
+        body.rebuild-home .rx-header { z-index: 3000 !important; }
+        body.rebuild-home .rx-menu-toggle,
+        body.rebuild-home .menu-toggle,
+        body.rebuild-home [aria-controls="primary-nav"] {
+          display: inline-flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          position: relative !important;
+          z-index: 3002 !important;
+        }
+        body.rebuild-home #primary-nav.primary-nav,
+        body.rebuild-home .rx-nav.primary-nav {
+          display: none !important;
+          position: fixed !important;
+          top: 68px !important;
+          left: 0 !important;
+          right: 0 !important;
+          bottom: 0 !important;
+          z-index: 2999 !important;
+          width: 100vw !important;
+          max-width: 100vw !important;
+          height: calc(100dvh - 68px) !important;
+          max-height: calc(100dvh - 68px) !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+          flex-direction: column !important;
+          align-items: stretch !important;
+          justify-content: flex-start !important;
+          gap: 0.18rem !important;
+          padding: 1rem 1.1rem 2rem !important;
+          margin: 0 !important;
+          border-top: 1px solid rgba(124,200,255,0.18) !important;
+          border-radius: 0 !important;
+          background: rgba(3,10,19,0.985) !important;
+          box-shadow: 0 30px 80px rgba(0,0,0,0.58) !important;
+          backdrop-filter: blur(20px) !important;
+        }
+        body.rebuild-home #primary-nav.primary-nav.is-open,
+        body.rebuild-home #primary-nav.primary-nav[data-open],
+        body.rebuild-home.nav-open #primary-nav.primary-nav,
+        html.nav-open body.rebuild-home #primary-nav.primary-nav,
+        body.rebuild-home .rx-nav.primary-nav.is-open,
+        body.rebuild-home .rx-nav.primary-nav[data-open],
+        body.rebuild-home.nav-open .rx-nav.primary-nav,
+        html.nav-open body.rebuild-home .rx-nav.primary-nav {
+          display: flex !important;
+        }
+        body.rebuild-home #primary-nav > a,
+        body.rebuild-home #primary-nav .rx-nav-group > a,
+        body.rebuild-home #primary-nav .rx-nav-cta,
+        body.rebuild-home .rx-nav.primary-nav > a,
+        body.rebuild-home .rx-nav.primary-nav .rx-nav-group > a,
+        body.rebuild-home .rx-nav.primary-nav .rx-nav-cta {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box !important;
+          padding: 0.72rem 0.75rem !important;
+          border-radius: 12px !important;
+          text-decoration: none !important;
+          font-size: 0.95rem !important;
+          line-height: 1.25 !important;
+          color: #f4f7fb !important;
+        }
+        body.rebuild-home #primary-nav .rx-nav-group,
+        body.rebuild-home #primary-nav .rx-dropdown,
+        body.rebuild-home .rx-nav.primary-nav .rx-nav-group,
+        body.rebuild-home .rx-nav.primary-nav .rx-dropdown {
+          display: block !important;
+          position: static !important;
+          width: 100% !important;
+          min-width: 0 !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          border: 0 !important;
+          border-radius: 0 !important;
+          background: transparent !important;
+          box-shadow: none !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          transform: none !important;
+        }
+        body.rebuild-home #primary-nav .rx-dropdown a,
+        body.rebuild-home .rx-nav.primary-nav .rx-dropdown a {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box !important;
+          padding: 0.52rem 0.75rem 0.52rem 1.35rem !important;
+          color: #a9b8c7 !important;
+          font-size: 0.84rem !important;
+          line-height: 1.25 !important;
+          text-decoration: none !important;
+        }
+      }
+      @media (max-width: 760px) {
+        body.rebuild-home #primary-nav.primary-nav,
+        body.rebuild-home .rx-nav.primary-nav {
+          top: 62px !important;
+          height: calc(100dvh - 62px) !important;
+          max-height: calc(100dvh - 62px) !important;
+          padding: 0.75rem 1rem 1.4rem !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  };
+
   const loadEnhancements = () => {
     loadCss('../css/mobile-preview-fix.css', 'data-solarex-mobile-fix');
     loadCss('../css/mobile-structure-pass2.css', 'data-solarex-mobile-pass2');
@@ -95,6 +209,7 @@
 
   const init = () => {
     loadEnhancements();
+    injectMenuCss();
     initMenu();
   };
 
