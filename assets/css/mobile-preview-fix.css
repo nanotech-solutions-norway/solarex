@@ -1,5 +1,6 @@
 /* SolarEX Phase 1 mobile preview hardening. Loaded by navigation.js after base CSS. */
-body.rebuild-home.nav-open { overflow: hidden; }
+body.rebuild-home.nav-open,
+html.nav-open body.rebuild-home { overflow: hidden; }
 
 @media (max-width: 1060px) {
   .rebuild-home .rx-header {
@@ -61,7 +62,10 @@ body.rebuild-home.nav-open { overflow: hidden; }
     backdrop-filter: blur(20px) !important;
   }
 
-  .rebuild-home .rx-nav.primary-nav.is-open {
+  .rebuild-home .rx-nav.primary-nav.is-open,
+  .rebuild-home .rx-nav.primary-nav[data-open],
+  body.rebuild-home.nav-open .rx-nav.primary-nav,
+  html.nav-open body.rebuild-home .rx-nav.primary-nav {
     display: flex !important;
   }
 
