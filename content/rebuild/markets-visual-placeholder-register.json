@@ -1,0 +1,32 @@
+{
+  "routes": [
+    "/markets/",
+    "/markets/europe/",
+    "/markets/middle-east-gcc/",
+    "/markets/nordics/"
+  ],
+  "generated": "12:43, 20.06.2026 Europe/Oslo",
+  "status": "PLANNED_PLACEHOLDERS_NO_BINARY_VISUALS_INSERTED",
+  "classification": "PUBLIC_APPROVED_STRUCTURE_PENDING_VISUAL_REVIEW",
+  "placeholders": [
+    {"placeholder_id":"VIS-MARKETS-HERO-001","route":"/markets/","section":"Hero","target_asset":"assets/img/markets/markets-hero.webp","source_status":"pending_manual_asset","alt_text":"SolarEX PV glass market route overview for Europe Middle East GCC and Nordics"},
+    {"placeholder_id":"VIS-MARKETS-PRINCIPLE-001","route":"/markets/","section":"Market principle","target_asset":"assets/img/markets/markets-principle.webp","source_status":"pending_manual_asset","alt_text":"SolarEX market principle for regional operating context and route control"},
+    {"placeholder_id":"VIS-MARKETS-FACTORS-001","route":"/markets/","section":"Market qualification","target_asset":"assets/img/markets/markets-factors.webp","source_status":"pending_manual_asset","alt_text":"SolarEX market qualification factors for PV glass opportunities"},
+    {"placeholder_id":"VIS-EUROPE-HERO-001","route":"/markets/europe/","section":"Hero","target_asset":"assets/img/markets/europe-hero.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Europe PV glass market route"},
+    {"placeholder_id":"VIS-EUROPE-PRINCIPLE-001","route":"/markets/europe/","section":"Europe route principle","target_asset":"assets/img/markets/europe-principle.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Europe market route principle for PV glass"},
+    {"placeholder_id":"VIS-EUROPE-PATHWAY-001","route":"/markets/europe/","section":"Product routing","target_asset":"assets/img/markets/europe-pathway.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Europe route selection for Quartz SiO₂ and Titan TiO₂"},
+    {"placeholder_id":"VIS-GCC-HERO-001","route":"/markets/middle-east-gcc/","section":"Hero","target_asset":"assets/img/markets/middle-east-gcc-hero.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Middle East and GCC PV glass market route"},
+    {"placeholder_id":"VIS-GCC-PRINCIPLE-001","route":"/markets/middle-east-gcc/","section":"Middle East GCC route principle","target_asset":"assets/img/markets/middle-east-gcc-principle.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Middle East and GCC route principle for dust and water constrained PV glass operations"},
+    {"placeholder_id":"VIS-GCC-PATHWAY-001","route":"/markets/middle-east-gcc/","section":"Product routing","target_asset":"assets/img/markets/middle-east-gcc-pathway.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Middle East and GCC route selection for Quartz SiO₂ and Titan TiO₂"},
+    {"placeholder_id":"VIS-NORDICS-HERO-001","route":"/markets/nordics/","section":"Hero","target_asset":"assets/img/markets/nordics-hero.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Nordics PV glass market route"},
+    {"placeholder_id":"VIS-NORDICS-PRINCIPLE-001","route":"/markets/nordics/","section":"Nordics route principle","target_asset":"assets/img/markets/nordics-principle.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Nordics route principle for seasonal low UV and weather exposed PV glass"},
+    {"placeholder_id":"VIS-NORDICS-PATHWAY-001","route":"/markets/nordics/","section":"Product routing","target_asset":"assets/img/markets/nordics-pathway.webp","source_status":"pending_manual_asset","alt_text":"SolarEX Nordics route selection for Quartz SiO₂ and Titan TiO₂"}
+  ],
+  "safety_notes": [
+    "No binary visual files inserted.",
+    "No backend or SQL activation performed.",
+    "No universal performance guarantees included.",
+    "No market endorsement, certification or exclusivity claim added.",
+    "Quartz SiO₂ and Titan TiO₂ route separation is preserved."
+  ]
+}
