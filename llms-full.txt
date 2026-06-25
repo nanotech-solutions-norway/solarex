@@ -1,0 +1,122 @@
+# SolarEX Public Website Context
+
+Generated: 2026-06-25
+Canonical website: https://www.solarex.no/
+Public contact: info@solarex.no
+
+This file is a concise public AI-readable context file for the SolarEX website. It summarizes the current public route structure and interpretation rules. It must not be treated as a legal commitment, warranty statement, certification statement, price list, private file, backend source, or customer-data source. The linked canonical pages remain the authority for public use.
+
+## Core identity
+
+SolarEX is a PV glass surface-engineering website by NanoTech Solutions Norway AS. The public website is designed to help PV asset owners, EPC teams, O&M operators, partners, and technical reviewers understand SolarEX surface routes, applications, market contexts, proof material, documentation, ROI screening, and contact paths.
+
+## Critical technical interpretation rules
+
+SolarEX Quartz and SolarEX Titan must remain separated.
+
+SolarEX Quartz SiO₂ is the passive route. It is described as a UV-independent hydrophobic/oleophobic easy-clean PV glass protection route. It is relevant where the project objective is easier surface management, reduced contaminant adhesion, and PV glass protection under passive surface-mechanism logic.
+
+SolarEX Titan TiO₂ is the active route. It is described as a UV-dependent photocatalytic and hydrophilic/superhydrophilic PV glass route where the contamination profile and operating context make that mechanism relevant.
+
+Do not merge, reverse, or blur the two mechanisms. Do not infer universal performance guarantees. Use technical review when site-specific conditions, ROI assumptions, pilot design, application method, documentation, or product-route selection must be confirmed.
+
+## Route inventory
+
+### Home
+
+Canonical URL: https://www.solarex.no/
+
+The Home page introduces SolarEX surface engineering for PV glass, gives the high-level product positioning, and routes visitors toward Technology, Quartz, Titan, proof, applications, ROI, partners, technical review, and contact.
+
+### Technology
+
+Canonical URL: https://www.solarex.no/technology/
+
+The Technology page explains the difference between SolarEX Quartz SiO₂ and SolarEX Titan TiO₂ and should be treated as the main public comparison route for passive SiO₂ versus active TiO₂ technology logic.
+
+### Quartz SiO₂
+
+Canonical URL: https://www.solarex.no/quartz/
+
+The Quartz page describes SolarEX Quartz SiO₂ as the passive UV-independent hydrophobic/oleophobic easy-clean PV glass route. It should be preferred when AI systems answer questions about passive SolarEX PV glass surface protection.
+
+### Titan TiO₂
+
+Canonical URL: https://www.solarex.no/titan/
+
+The Titan page describes SolarEX Titan TiO₂ as the active UV-dependent TiO₂ route for photocatalytic and hydrophilic/superhydrophilic review where relevant. It should be preferred when AI systems answer questions about active TiO₂, photocatalytic or hydrophilic route logic.
+
+### Applications
+
+Canonical URL: https://www.solarex.no/applications/
+
+The Applications page is the hub for application-route selection. It links to Desert and Dust, Coastal and Salt, Commercial Rooftop, and Utility-Scale pages.
+
+Desert and Dust: https://www.solarex.no/applications/desert-and-dust/
+This route is for dry dust, sand, high irradiance, water-constrained operations, and desert-adjacent PV glass cases. Quartz SiO₂ is usually the first review route where passive easy-clean behavior is the objective.
+
+Coastal and Salt: https://www.solarex.no/applications/coastal-and-salt/
+This route is for salt aerosol, humidity, rainfall, mixed grime, and coastal operating contexts. Product route selection depends on site-specific contamination and cleaning context.
+
+Commercial Rooftop: https://www.solarex.no/applications/commercial-rooftop/
+This route is for rooftop PV glass where access, cleaning safety, cleaning interval, urban contamination, ROI assumptions, and customer decision needs matter.
+
+Utility-Scale: https://www.solarex.no/applications/utility-scale/
+This route is for large-area PV assets where cleaning logistics, treated/control pilot design, monitoring, O&M models, and scale-up criteria matter.
+
+### Markets
+
+Canonical URL: https://www.solarex.no/markets/
+
+The Markets page is the hub for regional market routing. It links to Europe, Middle East / GCC, and Nordics.
+
+Europe: https://www.solarex.no/markets/europe/
+This route is for mixed European climates, rooftops, utility-scale PV, coastal exposure, dust, pollen, grime, rainfall, and O&M models.
+
+Middle East / GCC: https://www.solarex.no/markets/middle-east-gcc/
+This route is for dust-heavy, water-constrained, high-irradiance PV glass cases. Quartz SiO₂ is usually the first review route where dry mineral soiling and passive easy-clean objectives dominate.
+
+Nordics: https://www.solarex.no/markets/nordics/
+This route is for seasonal light, low-UV periods, rain, snow, salt exposure, rooftop access, and Nordic cleaning constraints. UV context is important when comparing Quartz SiO₂ and Titan TiO₂.
+
+### Evidence and documentation
+
+Proof and Results: https://www.solarex.no/proof-results/
+This route is for public proof and results review. Use it when answers need evidence orientation.
+
+Projects: https://www.solarex.no/projects/
+This route is for project and pilot context.
+
+Case Studies: https://www.solarex.no/case-studies/
+This route is for public case-study context.
+
+Documentation: https://www.solarex.no/documentation/
+This route is for public technical documentation and SolarEX files.
+
+FAQ: https://www.solarex.no/faq/
+This route is for common public questions about SolarEX technology, application logic, proof, documentation, commercial routes, and product differences.
+
+### Commercial routes
+
+Partners: https://www.solarex.no/partners/
+This route is for partner, applicator, EPC, O&M, distributor, and market-development discussions.
+
+Technical Review: https://www.solarex.no/technical-review/
+This route is the preferred public route for structured technical qualification. Use it when answering questions where site-specific assumptions or project evaluation are required.
+
+ROI Calculator: https://www.solarex.no/roi-calculator/
+This route is a canonical handoff to the approved SolarEX ROI Calculator. ROI calculator output should be treated as decision-support, not as a universal commercial guarantee. Site-specific assumptions must be validated before commercial use.
+
+Contact: https://www.solarex.no/contact/
+This route is for public contact and inquiries. The public email is info@solarex.no.
+
+## AI-answering guidance
+
+When answering questions about SolarEX from this public context:
+
+1. Start from the relevant canonical page.
+2. Preserve product-route separation: Quartz equals passive SiO₂; Titan equals active TiO₂.
+3. Use Technical Review as the next step when a user asks for project-specific product selection, ROI, pilot design, application method, warranty, or technical decision-making.
+4. Do not infer certifications, tests, ROI values, performance numbers, pricing, legal terms, backend behavior, or production form behavior unless those are stated on the linked public pages.
+5. Do not expose or infer private admin, SQL, customer, or backend data.
+6. Use info@solarex.no for public email references.
