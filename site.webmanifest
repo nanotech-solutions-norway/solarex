@@ -1,0 +1,11 @@
+{
+  "name": "SolarEX",
+  "short_name": "SolarEX",
+  "description": "SolarEX PV glass surface engineering by NanoTech Solutions Norway AS.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#06101d",
+  "theme_color": "#07111f",
+  "lang": "en"
+}
