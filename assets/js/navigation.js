@@ -140,6 +140,7 @@
     loadCss('../css/documentation-desktop-hotfix.css', 'data-solarex-doc-desktop-hotfix');
     loadCss('../css/desktop-hero-placeholder-hotfix.css', 'data-solarex-global-hero-hotfix');
     loadCss('../css/global-desktop-visual-baseline.css', 'data-solarex-global-desktop-baseline');
+    loadScript('structured-data.js', 'data-solarex-structured-data-js');
     loadScript('home-visual-insertion-tags.js', 'data-solarex-home-visual-tags-js');
     loadScript('technology-visual-insertion-tags.js', 'data-solarex-tech-visual-tags-js');
     loadScript('quartz-visual-insertion-tags.js', 'data-solarex-quartz-visual-tags-js');
